@@ -1,0 +1,87 @@
+
+    <!-- <div class="container clearfix slider-cards">
+        <div class=" card-deck row">
+            <div class="col-xl-3 col-md-3 col-sm-6 col-12 col-xl-3">
+                <div class="imgcls">
+                    <img src="img/baseline_call_black_18dp.png" alt="" class="imgcls"></div>
+                <div class="w-100">
+                    <div class="color bg-dark  ">
+                    </div>
+                </div>
+
+                <div class="card-body bg-dark slider-card">
+                    <h5 class="text-center text-white pt-3">Books & Library</h5>
+                    <p class="text-center text-white">This is a wider card with supporting </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 col-xl-3">
+                <div class="imgcls">
+                    <img src="img/baseline_call_black_18dp.png" alt="" class="imgcls"></div>
+                <div class="align-items-center">
+                    <div class="color bg-dark">
+                    </div>
+                </div>
+
+                <div class="card-body bg-dark slider-card">
+                    <h5 class="text-center text-white pt-3">Our Teacher</h5>
+                    <p class="text-center text-white">This is a wider card with supporting.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-6 col-12">
+                <div class="imgcls">
+                    <img src="img/baseline_call_black_18dp.png" alt="" class="imgcls"></div>
+                <div class="align-items-center">
+                    <div class="color bg-dark"></div>
+                </div>
+                <div class="card-body bg-dark slider-card">
+                    <h5 class="text-center text-white pt-3">Our achivements</h5>
+                    <p class="text-center text-white">This is a wider card with supporting.</p>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 col-xl-3">
+                <div class="imgcls">
+                    <img src="img/baseline_call_black_18dp.png" alt="" class="imgcls"></div>
+                <div class="align-items-center">
+                    <div class="color bg-dark"></div>
+                </div>
+                <div class="card-body bg-dark slider-card">
+                    <h5 class="text-center text-white pt-3">Today's News</h5>
+                    <p class="text-center text-white">This is a wider card with supporting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!--Notice board -->
+    <!-- <div class="notice-board mt-5 container">
+        <div class="notice-first-content  mt-4">
+            <div class="notice-title">
+                <h5 class="row col-12 col-md-12 col-sm-12 col-xl-12 col-lg-12 clearfix p-3 m-1"><a class="w-100  text-dark">Notice Board</a></h5>
+            </div>
+            <div class="first-notice mt-4">
+                <h5 class="first-notice-heading ml-3 mt-2">All the students have to pay money</h5>
+                <p class="recent-notice pl-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua</p>
+            </div>
+        </div>
+
+    <div class="dropdown clearfix notice-drop">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Other News
+             </button>
+        <div class="dropdown-menu dropdown-menu-1" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item dropdown-items" type="button"><a href="#"> Action <strong class="float-right">20/11/2019</strong></a></button>
+            <button class="dropdown-item dropdown-items" type="button"><a href="#"> Another action <strong class="float-right">20/11/2019</strong></a></button>
+            <button class="dropdown-item dropdown-items" type="button"><a href="#">Something else here<strong class="float-right">20/11/2019</strong></a></button>
+            <br/>
+            <button class="dropdown-item"><a href="#" class="float-right">All notice</a></button>
+
+        </div>
+    </div>
+
+    </div>
+-->
+
+  
