@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -40,17 +41,44 @@
                 <li class="nav-item dropdown mt-1">
                     <a href="#" class="nav-link dropdown-toggle" id="userProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
                     <div class="dropdown-menu" aria-labelledby="userProfile" style="margin-left: -173px;">
-                        <a href="#" class="list-group-item text-dark">Name: Xmass Duo</a>
-                        <a href="#" class="list-group-item text-dark">ID: AB0956</a>
-                        <a href="#" class="list-group-item text-dark">Report: Issues in your account</a>
-                        <a href="#" class="list-group-item text-dark">Log out</a>
+                        <a href="#" class="list-group-item text-dark bb-dark p-2">Name: Xmass Duo</a>
+                        <a href="#" class="list-group-item text-dark bb-dark p-2">ID: AB0956</a>
+                        <a href="#" class="list-group-item text-dark bb-dark p-2">Report: Issues in your account</a>
+                        <a href="#" class="list-group-item text-dark p-2">Log out</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
     <!--User navbar ends here-->
+    <!-- User control options-->
 
+    <div class="control-menu bg-dark dropdown ml-0 pl-0 mt-5">
+        <div id="accordion " role="tablist">
+            <div class="card">
+                <div class="bg-dark">
+                    <h5 class="mb-0 mt-3 text-center">
+                        <a data-toggle="collapse" class="text-white" href="#sub-list">Subject List</a>
+                    </h5>
+                    <br>
+                </div>
+                <div class="collapse bg-dark text-white " id="sub-list" data-parent="accordion">
+
+                    <a href="#" class="d-block text-white text-center border-color w-100 p-1">Bangla</a>
+                    <a href="#" class="d-block text-white text-center border-color w-100 p-1">Mathematics</a>
+                    <a href="#" class="d-block text-white text-center border-color w-100 p-1">English</a>
+                    <a href="#" class="d-block text-white text-center border-color w-100 p-1">Social Science</a>
+                    <a href="#" class="d-block text-white text-center border-color w-100 p-1">General Science</a>
+                    <a href="#" class="d-block text-white text-center border-color w-100 p-1">Religion</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
