@@ -96,6 +96,10 @@
         margin-left: 2%;
     }
     
+    .menu-main li a {
+        font-size: 15px;
+    }
+    
     .color {
         height: 120px;
         border-radius: 60px;
