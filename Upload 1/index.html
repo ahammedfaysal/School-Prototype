@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!--CUstomized google fonts here-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +18,7 @@
 
 <body>
     <!--head top available here-->
-    <div class=" info container-fluid mt-2">
+    <div class="container-fluid mt-2">
         <div class="row">
             <div class="float-left col-lg-8 col-xl-7 col-md-12 col-sm-12 col-11">
                 <div class="ml-5  ">
@@ -32,9 +32,18 @@
             </div>
             <div class="col-lg-4 col-xl-5  col-md-5 offset-md-4 mb-1 offset-lg-0 offset-xl-0 col-sm-6 offset-sm-3 col-12 offset-1">
                 <div class="float-right mr-5">
-                    <div class="parents-login d-inline-block "><a class="parents-login-1 text-dark pr-1 " href="# "><span class="text "> Parents' login</span></a></div>
-                    <div class=" border-right d-inline-block ml-0 mr-0 pr-0 pl-0 mt-1 ">|</div>
-                    <div class=" parents-inquery d-inline-block "><a class="text-dark pr-1 " href="# ">visitors' inquery</a></div>
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger">Users' Login</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Visitors Query</a>
+                            <a class="dropdown-item" href="#">Students Login</a>
+                            <a class="dropdown-item" href="pages/login.html">Teachers Login</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,14 +53,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container-fluid menu-main row ">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 offset-lg-0 offset-md-0 offset-xl-0 offset-sm-0 offset-0 ">
-                <div class="d-inline-block teacher-link float-right "><a href="pages/login.html " class="text-light "> Teachers' Portal</a></div>
                 <button class="navbar-toggler m-1 mr-2 " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
                 <span class="navbar-toggler-icon "></span>
                </button>
                 <div class="collapse navbar-collapse float-left " id="navbarSupportedContent ">
                     <ul class="navbar-nav mr-auto ">
                         <li class="nav-item active"><a class="nav-link text-dark " href="# ">Home <span class="sr-only ">(current)</span></a></li>
-                        <li class="nav-item dropdown "><a class="nav-link text-dark dropdown-toggle " id="navbarDropdownMenuLink " href="# " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">Administrative Info</a>
+                        <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrative Info</a>
                             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item " href="# ">Notification</a>
                                 <a class="dropdown-item " href="# ">Bus Services</a>
@@ -62,7 +70,8 @@
                                 <a class="dropdown-item " href="# ">Institutional Rules</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown "><a class="nav-link text-dark dropdown-toggle " id="navbarDropdownMenuLink-2 " href="# " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">Institutional Info</a>
+
+                        <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Institutional Info</a>
                             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink-2 ">
                                 <a class="dropdown-item " href="# ">Introduction & History</a>
                                 <a class="dropdown-item " href="# ">Infrustucture</a>
@@ -73,7 +82,7 @@
                                 <a class="dropdown-item " href="# ">Sports and Cultural Activities</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown "><a class="nav-link text-dark dropdown-toggle " id="navbarDropdownMenuLink-3 " href="# " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">Admission Info</a>
+                        <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admission Info</a>
                             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink-3 ">
                                 <a class="dropdown-item " href="# ">Admission Info</a>
                                 <a class="dropdown-item " href="# ">Admission Form</a>
@@ -81,7 +90,7 @@
                                 <a class="dropdown-item " href="# ">Admission Exam Result</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown "><a class="nav-link text-dark dropdown-toggle " id="navbarDropdownMenuLink-4 " href="# " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">Curriculum Info</a>
+                        <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curriculum Info</a>
                             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink-4 ">
                                 <a class="dropdown-item " href="# ">Class Routine</a>
                                 <a class="dropdown-item " href="# ">Class Info</a>
@@ -94,24 +103,13 @@
                                 <a class="dropdown-item " href="# ">Student Info</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown "><a class="nav-link text-dark dropdown-toggle " id="navbarDropdownMenuLink-5 " href="# " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">Academic Exam and Info</a>
+                        <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academic Exam and Info</a>
                             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink-5 ">
                                 <a class="dropdown-item " href="# ">Examination Date</a>
                                 <a class="dropdown-item " href="# ">Online Examination</a>
                                 <a class="dropdown-item " href="# ">Examination Result</a>
                             </div>
                         </li>
-						      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
                         <li class="nav-item "><a class="nav-link text-dark " href="# ">Gallery</a></li>
                     </ul>
                 </div>
@@ -120,6 +118,7 @@
         </div>
 
     </nav>
+
 
     <!--Navbar ends here-->
     <!--Slider starts here-->
@@ -172,7 +171,6 @@
     <!-- Slider ends here-->
 
     <!--card items-->
-
     <div class="container">
         <div class="card mb-4 row">
             <div class="row mt-4 mb-4">
@@ -207,42 +205,40 @@
                 </div>
             </div>
         </div>
-
     </div>
-
     <!--Notice Board-->
-    <div class="notice-background">
-        <div class="container">
-            <div class="row">
-                <h1 class="heading-notice text-center col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12 text-white p-2 mt-4">Latest Notice</h1>
+    <div class="notice-background ">
+        <div class="container ">
+            <div class="row ">
+                <h1 class="heading-notice text-center col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12 text-white p-2 mt-4 ">Latest Notice</h1>
             </div>
-            <div class="recent-notice row pt-3 pb-4 mt-3">
-                <div class="col-11 col-md-12 col-sm-12 col-lg-12 col-xl-6 mb-5 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-lg-0">
-                    <div class="w-25 recent-notice-img float-left"><img src="img/banner-3.jpg" alt="" class="float-right mr-3 "></div>
-                    <div class="notice-content w-75 float-left pr-1">
-                        <h2 class="heading text-white">Omnis iste natus error sit voluptatem accusantium</h2>
-                        <p class="notice-time text-info m-0">14 APR 2014, <strong class="author"> Jason Bang</strong></p>
-                        <div class="display-content-c">
-                            <p class="display-6 text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
-                            <a href="#" class="read-more float-right mr-2">read more</a></div>
+            <div class="recent-notice row pt-3 pb-4 mt-3 ">
+                <div class="col-11 col-md-12 col-sm-12 col-lg-12 col-xl-6 mb-5 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-lg-0 ">
+                    <div class="w-25 recent-notice-img float-left "><img src="img/banner-3.jpg " alt=" " class="float-right mr-3 "></div>
+                    <div class="notice-content w-75 float-left pr-1 ">
+                        <h2 class="heading text-white ">Omnis iste natus error sit voluptatem accusantium</h2>
+                        <p class="notice-time text-info m-0 ">14 APR 2014, <strong class="author "> Jason Bang</strong></p>
+                        <div class="display-content-c ">
+                            <p class="display-6 text-white ">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
+                            <a href="# " class="read-more float-right mr-2 ">read more</a></div>
                     </div>
                 </div>
-                <div class="col-11 col-md-12 col-sm-12 col-lg-12 col-xl-6 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-lg-0">
-                    <div class="w-25 recent-notice-img float-left "><img src="img/banner-3.jpg" alt="" class="float-right mr-3"></div>
-                    <div class="notice-content w-75 float-left">
-                        <h2 class="heading text-white">Omnis iste natus error sit voluptatem accusantium</h2>
-                        <p class="notice-time text-info m-0">14 APR 2014, <strong class="author"> Jason Bang</strong></p>
-                        <div class="display-content-c">
-                            <p class="notice-content-c text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
-                            <a href="#" class="read-more float-right mr-2">read more</a>
+                <div class="col-11 col-md-12 col-sm-12 col-lg-12 col-xl-6 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-lg-0 ">
+                    <div class="w-25 recent-notice-img float-left "><img src="img/banner-3.jpg " alt=" " class="float-right mr-3 "></div>
+                    <div class="notice-content w-75 float-left ">
+                        <h2 class="heading text-white ">Omnis iste natus error sit voluptatem accusantium</h2>
+                        <p class="notice-time text-info m-0 ">14 APR 2014, <strong class="author "> Jason Bang</strong></p>
+                        <div class="display-content-c ">
+                            <p class="notice-content-c text-white ">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
+                            <a href="# " class="read-more float-right mr-2 ">read more</a>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="row">
-                <div class="d-flex justify-content-center col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12 p-4">
-                    <button type="button" class="btn btn-light mb-4 mt-2   " style="padding:10px 120px">For all notice</button>
+            <div class="row ">
+                <div class="d-flex justify-content-center col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12 p-4 ">
+                    <button type="button " class="btn btn-light mb-4 mt-2 " style="padding:10px 120px ">For all notice</button>
                 </div>
             </div>
         </div>
@@ -312,6 +308,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Starting of Events-->
     <div class="container-fluid  event-text">
@@ -407,60 +404,92 @@
     <!-- Ending of Events-->
 
     <!-- this is the footer section -->
-    <footer class="container-fluid bg-dark clearfix mt-4">
-        <div class="container  p-4">
-            <div class="row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col=xl-4 p-3 footcol1">
-                    <div class="foot ml-2">
-                        <h5 class="font-weight-bold text-white">College Logo</h5>
+    <footer class="container-fluid bg-dark clearfix mt-4 ">
+        <div class="container p-4 ">
+            <div class="row ">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col=xl-4 p-3 footcol1 ">
+                    <div class="foot ml-2 ">
+                        <h5 class="font-weight-bold text-white ">College Logo</h5>
                     </div>
-                    <div class="footcol1con m-2">
-                        <p class="text-white"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="footcol1con m-2 ">
+                        <p class="text-white "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                     </div>
-                    <ul class="mt-2 icons list-unstyled list-inline flex-wrap my-4 d-flex justify-content-center">
-                        <li><i class="fa  fa-2x fa-inverse fa-facebook list-inline-item p-2 ml-2" aria-hidden="true"></i></li>
-                        <li class=""><i class="fa fa-inverse fa-2x fa-linkedin list-inline-item p-2 ml-2" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-inverse fa-2x fa-youtube-square list-inline-item p-2 ml-2" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-inverse fa-2x fa-twitter-square list-inline-item p-2 ml-2" aria-hidden="true"></i></li>
+                    <ul class="mt-2 icons list-unstyled list-inline flex-wrap my-4 d-flex justify-content-center ">
+                        <li><i class="fa fa-2x fa-inverse fa-facebook list-inline-item p-2 ml-2 " aria-hidden="true "></i></li>
+                        <li class=" "><i class="fa fa-inverse fa-2x fa-linkedin list-inline-item p-2 ml-2 " aria-hidden="true "></i></li>
+                        <li><i class="fa fa-inverse fa-2x fa-youtube-square list-inline-item p-2 ml-2 " aria-hidden="true "></i></li>
+                        <li><i class="fa fa-inverse fa-2x fa-twitter-square list-inline-item p-2 ml-2 " aria-hidden="true "></i></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col=xl-4">
-                    <div class="find-us mt-3">
-                        <h4 class="text-white">Our address</h4>
-                        <ul class="address list-unstyled">
-                            <li class="text-white">P.O. Box 320, Ross, California 9495, USA</li>
-                            <li class="text-white">Phone:<span> (415) 453-1568</span></li>
-                            <li class="text-white">Website:<span> www.schoolweb.io</span></li>
-                            <li class="text-white">Email: <span>info@markups.io</span></li>
-                            <button type="button" class="btn btn-light mt-4 text-dark">Contact For Query</button>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col=xl-4 ">
+                    <div class="find-us mt-3 ">
+                        <h4 class="text-white ">Our address</h4>
+                        <ul class="address list-unstyled ">
+                            <li class="text-white ">P.O. Box 320, Ross, California 9495, USA</li>
+                            <li class="text-white ">Phone:<span> (415) 453-1568</span></li>
+                            <li class="text-white ">Website:<span> www.schoolweb.io</span></li>
+                            <li class="text-white ">Email: <span>info@markups.io</span></li>
+                            <button type="button " class="btn btn-light mt-4 text-dark ">Contact For Query</button>
                         </ul>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col=xl-4 ">
-                    <h4 class="gallery-heading text-white"> Gallery</h4>
-                    <div class="gallery-image-footer">
-                        <img src="img/banner-2.jpg" alt="" class="image m-1">
-                        <img src="img/banner-2.jpg" alt="" class="image m-1">
-                        <img src="img/banner-2.jpg" alt="" class="image m-1">
-                        <img src="img/banner-2.jpg" alt="" class="image m-1">
-                        <img src="img/banner-2.jpg" alt="" class="image m-1">
-                        <img src="img/banner-2.jpg" alt="" class="image m-1">
+                    <h4 class="gallery-heading text-white "> Gallery</h4>
+                    <div class="gallery-image-footer ">
+                        <img src="img/banner-2.jpg " alt=" " class="image m-1 ">
+                        <img src="img/banner-2.jpg " alt=" " class="image m-1 ">
+                        <img src="img/banner-2.jpg " alt=" " class="image m-1 ">
+                        <img src="img/banner-2.jpg " alt=" " class="image m-1 ">
+                        <img src="img/banner-2.jpg " alt=" " class="image m-1 ">
+                        <img src="img/banner-2.jpg " alt=" " class="image m-1 ">
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- This is the end of about us section-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/998d7906b0.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="https://kit.fontawesome.com/998d7906b0.js " crossorigin="anonymous "></script>
 
 
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js "></script>
     <script>
         $('.counter-count').each(function() {
             $(this).prop('Counter', 0).animate({

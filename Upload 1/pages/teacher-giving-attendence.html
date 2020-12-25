@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="background:#162036">
+    <div class="container-fluid p-0 m-0">
+        <nav class="p-2 navbar navbar-expand navbar-dark control-panel fixed-top" style="box-shadow: 0ch 0cm 4cm #1E1E1E">
+            <div class="container-fluid">
+                <div class="branding ml-5">
+                    <i class="fas fa-school fa-2x fa-inverse"></i>
+                    <a class="navbar-brand  p-2" href="#">SchoolName</a>
+                </div>
+                <div class="float-right">
+                    <ul class="navbar-nav mr-5">
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-envelope-open fa-1x fa-inverse"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-user-circle fa-1x fa-inverse"></i></i></a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="userProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                            <div class="dropdown-menu p-2 bb-dark" aria-labelledby="userProfile" style="margin-left: -80px;">
+                                <a href="#" class="d-block pb-1 pt-1 text-white "><i class="far fa-user mr-3 ml-2"></i>Xmass Duo</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-fingerprint ml-2 mr-3"></i> AB0956</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-cog ml-2 mr-3"></i>Setting</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-sign-out-alt ml-2 mr-3"></i>Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div style="width:17%;" class="float-left">
+            <div class=" control-panel ">
+                <div class="w-100 mt-5 pt-5 pl-2 pr-2">
+                    <h5 class="text-white text-center pb-2 " style="border-bottom:2px solid #162036;">Dashboard</h5>
+                </div>
+
+                <div class="user d-block w-100 mt-4">
+                    <i class="far fa-user-circle fa-3x fa-inverse d-flex justify-content-center"></i>
+                    <div class="userName d-block">
+                        <p class="text-white text-center mt-2">UserName</p>
+                    </div>
+                </div>
+                <div class="w-100 mt-3  ">
+                    <ul class="dashboard-social-icon list-unstyled  d-flex justify-content-center">
+                        <li><a href="#"><i class="fab fa-inverse fa-1x fa-facebook-f "></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-1x fa-inverse "></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in fa-1x fa-inverse "></i></a></li>
+                    </ul>
+                </div>
+                <div class="control-menu mt-5 ml-1 mr-1" style="padding-bottom:0px; border-bottom: 2px solid #1E1E1E;">
+                    <h5 class="title pb-1 text-white ml-1 mr-1 pl-3 pr-2 text-center" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">Control Widget</h5>
+                </div>
+
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="teacher-file-management.html" class="nav-link text-center text-light">File Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="teacher-giving-attendence.html" class="nav-link text-center text-light">Student Attendence</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="float-right mr-4 p-3" style=" border-radius:10px;width:80%;margin-top:90px">
+            <div class="control-panel clearfix" style="border-radius: 10px;">
+                <h5 class="text-white ml-3 pt-2 pb-3">Select Subject and Class to Take Students Attndence</h5>
+                <div id="accordion" class="w-50 float-left">
+
+                    <div id="headingOne">
+                        <a href="#"> <button class="btn btn-primary ml-3 mt-3">Download This Month Attendence List</button></a>
+                        <button class="btn btn-primary ml-2 mt-3 " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">See today's attendence</button>
+
+
+                    </div>
+                </div>
+
+
+                <div class="dropdown float-right p-3">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Select Class
+                     </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Class 1</a>
+                        <a class="dropdown-item" href="#">Class 2</a>
+                        <a class="dropdown-item" href="#">Class 3</a>
+                        <a class="dropdown-item" href="#">Class 4</a>
+                        <a class="dropdown-item" href="#">Class 5</a>
+                        <a class="dropdown-item" href="#">Class 9</a>
+                        <a class="dropdown-item" href="#">Class 10</a>
+                    </div>
+                </div>
+                <div class="dropdown float-right p-3">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Select Subject
+                     </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <a class="dropdown-item" href="#">Sub 1</a>
+                        <a class="dropdown-item" href="#">Sub 2</a>
+                        <a class="dropdown-item" href="#">sub 3</a>
+                        <a class="dropdown-item" href="#">sub 4</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--
+                Attence Taken List
+            -->
+            <div id="collapseOne" class="collapse control-panel text-white p-3 mt-4" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="w-100 pr-4">
+                    <p class="text-muted d-inline float-right">12/12/2012</p>
+                    <p class="d-inline text-muted float-right">Date:</p>
+
+                </div>
+                <div class="w-100 row ">
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attendance Part-->
+            <div class="control-panel p-3 mt-5 row" style="border-radius: 10px;">
+                <div class="w-100 pr-4">
+                    <p class="text-muted d-inline float-right">12/12/2012</p>
+                    <p class="d-inline text-muted float-right">Date:</p>
+
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                        <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                        <p class="d-inline text-white">AB01045</p>
+                        <div class="d-inline-block">
+                            <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
+                            <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 p-3">
+                    <button class="btn btn-primary float-right">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid control-panel pb-3 pt-3 " style="overflow: hidden;">
+        <h5 class="text-center text-white ">Copyright &copy Reserved by Rsoftbd</h5>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/998d7906b0.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
