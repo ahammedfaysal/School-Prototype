@@ -74,7 +74,7 @@
                         <a href="teacher-class-routine.html" class="nav-link text-center text-light">Class Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a href="student-exam-mark.html" class="nav-link text-center text-light">Examination Score Update</a>
+                        <a href="#" class="nav-link text-center text-light">Examination Score Update</a>
                     </li>
                 </ul>
 
@@ -82,116 +82,126 @@
         </div>
         <div class="float-right mr-4 p-3" style=" border-radius:10px;width:80%;margin-top:90px">
             <div class="control-panel clearfix" style="border-radius: 10px;">
-                <h5 class="text-white ml-3 pt-2 pb-3">Select Subject and Class to Take Students Attndence</h5>
-                <div id="accordion" class="w-50 float-left">
-
-                    <div id="headingOne">
-                        <a href="#"> <button class="btn btn-primary ml-3 mt-3">Download This Month Attendence Sheet</button></a>
-                        <button class="btn btn-primary ml-2 mt-3 " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">See today's attendence</button>
-
-
+                <h5 class="text-white ml-3 pt-2 pb-3">Select Subject and Class to Submit Score</h5>
+                <div class="w-100">
+                    <div class="w-25 float-left ">
+                        <div class="pl-3">
+                            <a for="collapseOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="btn btn-primary"> See Today's Updated Score</a>
+                        </div>
                     </div>
-                </div>
 
-
-                <div class="dropdown float-right p-3">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="w-50 float-right">
+                        <div class="dropdown float-right p-3">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Select Class
                      </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Class 1</a>
-                        <a class="dropdown-item" href="#">Class 2</a>
-                        <a class="dropdown-item" href="#">Class 3</a>
-                        <a class="dropdown-item" href="#">Class 4</a>
-                        <a class="dropdown-item" href="#">Class 5</a>
-                        <a class="dropdown-item" href="#">Class 9</a>
-                        <a class="dropdown-item" href="#">Class 10</a>
-                    </div>
-                </div>
-                <div class="dropdown float-right p-3">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Class 1</a>
+                                <a class="dropdown-item" href="#">Class 2</a>
+                                <a class="dropdown-item" href="#">Class 3</a>
+                                <a class="dropdown-item" href="#">Class 4</a>
+                                <a class="dropdown-item" href="#">Class 5</a>
+                                <a class="dropdown-item" href="#">Class 9</a>
+                                <a class="dropdown-item" href="#">Class 10</a>
+                            </div>
+                        </div>
+                        <div class="dropdown float-right p-3">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Select Subject
                      </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <a class="dropdown-item" href="#">Sub 1</a>
-                        <a class="dropdown-item" href="#">Sub 2</a>
-                        <a class="dropdown-item" href="#">sub 3</a>
-                        <a class="dropdown-item" href="#">sub 4</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <a class="dropdown-item" href="#">Sub 1</a>
+                                <a class="dropdown-item" href="#">Sub 2</a>
+                                <a class="dropdown-item" href="#">sub 3</a>
+                                <a class="dropdown-item" href="#">sub 4</a>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
 
             <!--
-                Attence Taken List
+                Marks Given List
             -->
-            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion" style="border-radius: 10px;">
-                <div class="control-panel text-white p-3 mt-4">
+
+
+
+            <div id="collapseOne" class="collapse ">
+                <div class="p-3 mt-4  control-panel" style="border-radius: 10px;">
                     <div class="w-100 pr-4">
                         <p class="text-muted d-inline float-right">12/12/2012</p>
                         <p class="d-inline text-muted float-right">Date:</p>
-
                     </div>
                     <div class="w-100 row ">
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
                                 <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                                 <p class="d-inline text-white">AB01045</p>
+                                <p class="text-muted pr-1-1 d-inline float-right">60</p>
                             </div>
                         </div>
                     </div>
@@ -201,18 +211,20 @@
             <!-- Attendance Part-->
             <div class="control-panel p-3 mt-5 " style="border-radius: 10px;">
                 <div class="row">
-                    <div class="w-100 pr-4">
-                        <p class="text-muted d-inline float-right">12/12/2012</p>
-                        <p class="d-inline text-muted float-right">Date:</p>
+                    <div class="w-100 d-block ">
+                        <h5 class="text-white pt-4 pl-4 pb-0 mb-0">Insert the student score and Submit</h5>
+                        <p class="text-muted m-0 p-0 pl-4">Note:Mark Checkbok if candidate is absent </p>
+                    </div>
+                    <div class="col-4">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+                            <div class="d-inline-block">
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
 
-                    </div>
-                    <div class="col-4">
-                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
-                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
-                            <p class="d-inline text-white">AB01045</p>
-                            <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox" value="" id="flexCheckDefault">
                             </div>
                         </div>
                     </div>
@@ -221,8 +233,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -231,8 +245,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -241,8 +257,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -251,8 +269,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -261,8 +281,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -271,8 +293,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -281,8 +305,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -291,8 +317,23 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
+                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
+                            <p class="d-inline text-white">AB01045</p>
+
+                            <div class="d-inline-block">
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
+                            </div>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
@@ -301,18 +342,10 @@
                             <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
                             <p class="d-inline text-white">AB01045</p>
                             <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                                <input type="text" placeholder="Insert Score" class="form-control ml-3 mr-1 p-1 mt-1 d-inline" aria-label="" style="width:100px">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="student-attendece-card p-3 m-1 student-attendece-card-item" style="border-radius: 10px;">
-                            <i class="d-inline far fa-user-circle fa-1x fa-inverse  p-3" aria-hidden="true"></i>
-                            <p class="d-inline text-white">AB01045</p>
-                            <div class="d-inline-block">
-                                <input type="checkbox" class="ml-1 mr-1 p-1 mt-1 d-inline" aria-label="Attended-tick">
-                                <p class="text-white d-inline ml-2" for="Attended-tick">Tick for Attendence</p>
+                            <div class="d-inline-block mt-2 ml-2" style="width:10px;float:right">
+                                <input class="form-check-input d-inline" type="checkbox">
                             </div>
                         </div>
                     </div>
