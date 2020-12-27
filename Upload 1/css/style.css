@@ -357,3 +357,35 @@
     .student-attendece-card-item {
         background-color: #1a2338;
     }
+    
+    .form-field {
+        border-radius: 10px;
+    }
+    
+    .signin-panel {
+        box-shadow: 6px 6px 20px #475469;
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        /* style for extra large screen*/
+    }
+    
+    @media only screen and (max-width: 992px) {
+        /* style for large screen*/
+    }
+    
+    @media only screen and (max-width: 768px) {
+        /* Medium screen */
+        .class-time {
+            font-size: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 576px) {
+        /* styles for small */
+        .class-time {
+            font-size: 5px;
+        }
+    }
