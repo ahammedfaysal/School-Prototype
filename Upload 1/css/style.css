@@ -388,4 +388,7 @@
         .class-time {
             font-size: 5px;
         }
+        .disp-block {
+            width: 100%;
+        }
     }
