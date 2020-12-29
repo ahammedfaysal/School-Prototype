@@ -13,7 +13,6 @@
     
     .info a {
         font-size: 18px;
-        ;
     }
     
     .navbar {
@@ -22,8 +21,12 @@
         padding-top: 0px;
     }
     
+    .drop-hover:hover {
+        background: rgb(56, 48, 48)
+    }
+    
     .bg-light-color {
-        background-color: #e3e7ea;
+        background-color: #2f3235;
         margin: 0;
         padding: 0;
     }
@@ -33,9 +36,8 @@
         margin-left: 3%;
     }
     
-    .info-main,
-    {
-        padding: 10px
+    .info-main {
+        padding: 10px;
     }
     
     .teacher-link {
@@ -112,8 +114,6 @@
         position: absolute;
         width: 100%;
     }
-    
-    .slider-cards {}
     
     .imgcls img {
         position: absolute;
@@ -339,7 +339,7 @@
     }
     
     .dashboard-social-icon li a {
-        margin: 10px
+        margin: 10px;
     }
     
     .dashboard-social-icon li {

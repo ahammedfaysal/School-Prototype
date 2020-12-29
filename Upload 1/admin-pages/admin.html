@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="background:#162036">
+    <div class="container-fluid p-0 m-0">
+
+        <nav class="p-2 navbar navbar-expand-sm navbar-dark control-panel " style="box-shadow: 0ch 0cm 4cm #1E1E1E">
+
+            <div class="container-fluid row">
+
+                <div class="branding col-xl-6 col-md-6 col-sm-6 col-lg-6 col-12 ml-5">
+                    <i class="fas fa-school fa-2x fa-inverse"></i>
+                    <a class="navbar-brand  p-2" href="#">SchoolName</a>
+                </div>
+                <button class="mx-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse col-xl-6 col-md-6 col-sm-6 col-lg-6 col-12 " id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-5 ml-lg-auto ml-xl-auto ml-md-auto ml-sm-auto" style="margin-left:100px">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link postion-relative">
+                                <p class=" font-weight-bold position-absolute text-white rounded-circle  text-center" style="margin: -9px 0px 0px 7px;;"><strong class="text-warning" style="font-size: 50px;line-height: 2px;">.</strong></p><i class="far fa-envelope-open fa-1x fa-inverse"></i></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-user-circle fa-1x fa-inverse"></i></a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="userProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                            <div class="dropdown-menu p-2 bb-dark" aria-labelledby="userProfile" style="margin-left: -80px;">
+                                <a href="#" class="d-block pb-1 pt-1 text-white "><i class="far fa-user mr-3 ml-2"></i>Xmass Duo</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-fingerprint ml-2 mr-3"></i> AB0956</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-cog ml-2 mr-3"></i>Setting</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-sign-out-alt ml-2 mr-3"></i>Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div style="width:25%; " class=" row float-left mb-4">
+        <div class=" control-panel col-xl-12 col-lg-12 p-0 m-0">
+            <div class=" pt-5">
+                <h5 class="text-white text-center pb-2 d-none d-sm-none  d-md-block d-lg-block d-xl-block" style="border-bottom:2px solid #162036;">Dashboard</h5>
+                <h5 class="text-white text-center ml-2 d-block d-sm-block d-md-none d-lg-none d-xl-none">DB</h5>
+            </div>
+
+            <div class="user d-block w-100 mt-4">
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none"> <i class="far fa-user-circle fa-1x fa-inverse d-flex justify-content-center "></i>
+                </div>
+                <div class="d-sm-none d-none d-md-block d-lg-block d-xl-block">
+                    <i class="far fa-user-circle fa-3x fa-inverse d-flex justify-content-center "></i>
+                </div>
+                <div class="userName d-block">
+                    <p class="text-white text-center mt-2 d-block d-sm-block d-md-none d-lg-none d-xl-none">UN</p>
+                    <p class="text-white text-center mt-2 d-sm-none d-none d-md-block d-lg-block d-xl-block">UserName</p>
+                </div>
+            </div>
+            <div class="control-menu mt-2 ml-1 mr-1" style="padding-bottom:0px; border-bottom: 2px solid #1E1E1E;">
+                <h5 class="title pb-1 text-white text-center ml-1 mr-1 pl-3 pr-2 d-sm-none d-none d-md-block d-lg-block d-xl-block" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">Control Widget</h5>
+                <p class="title pb-1 text-white ml-1 text-center d-block d-sm-block d-md-none d-lg-none d-xl-none" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">CW</p>
+            </div>
+
+            <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0">
+                <a class=" control-panel mt-3 text-white  dropdown-toggle " data-toggle="dropdown"><i class="fas fa-chalkboard-teacher mr-0 mr-sm-2"></i>
+                       <strong class="d-sm-none d-md-none d-none d-lg-inline-block d-xl-inline-block">
+
+                        Teacher Account Control</strong>
+                </a>
+                <div class="dropdown-menu control-panel">
+                    <div class="dropdown-item drop-hover">
+                        <a data-toggle="collapse" class="text-white" data-target="#item1">Teachers Registration</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown py-2 justify-content-md-center justify-content-sm-center d-flex justify-content-center justify-content-lg-start ml-lg-4 ml-md-0">
+                <a class="control-panel text-white  dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user-graduate fa-inverse mr-0 mr-sm-2"></i><strong class="d-sm-none d-md-none d-none d-lg-inline-block d-xl-inline-block">
+                        Students Account Control</strong>
+                </a>
+                <div class="dropdown-menu control-panel">
+                    <div class="dropdown-item drop-hover">
+                        <a data-toggle="collapse" class="text-white" data-target="#item3">Students' Registration</a>
+                    </div>
+                    <div class="dropdown-item drop-hover">
+                        <a data-toggle="collapse" class="text-white" data-target="#item4">students' Admit Card Issue</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="dropdown py-1 justify-content-md-center justify-content-sm-center d-flex justify-content-center justify-content-lg-start ml-lg-4 ml-md-0">
+                <a class=" control-panel  text-white  dropdown-toggle" data-toggle="dropdown"><i class="fas fa-money-check-alt mr-0 mr-sm-2"></i><strong class="d-sm-none d-md-none d-none d-lg-inline-block d-xl-inline-block">
+                        Accounts</strong>
+                </a>
+                <div class="dropdown-menu control-panel">
+                    <div class="dropdown-item drop-hover">
+                        <a data-toggle="collapse" class="text-white" data-target="#item5">Accounts Registration</a>
+                    </div>
+                    <div class="dropdown-item drop-hover">
+                        <a data-toggle="collapse" class="text-white" data-target="#item6"> Account Role Adda</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown py-2 justify-content-md-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0 justify-content-center">
+                <a class=" control-panel text-white  dropdown-toggle" data-toggle="dropdown"><i class="fas fa-book mr-0 mr-sm-2 "></i><strong class="d-sm-none d-md-none d-none d-lg-inline-block d-xl-inline-block">
+                        Class & Subject</strong>
+                </a>
+                <div class="dropdown-menu control-panel">
+                    <div class="dropdown-item drop-hover">
+                        <a data-toggle="collapse" class="text-white" data-target="#item7">Create Class & Subject</a>
+                    </div>
+                    <div class="dropdown-item drop-hover">
+                        <a data-toggle="collapse" class="text-white" data-target="#item8">Assign subject to class</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown py-2 justify-content-md-center d-flex justify-content-sm-center justify-content-center justify-content-lg-start ml-lg-4 ml-md-0">
+                <a class=" control-panel   text-white" data-toggle="collapse" data-target="#item9"><i class="far fa-calendar-alt mr-lg-2 mr-md-4 mr-sm-4 mr-2 "></i><strong class="d-sm-none d-md-none d-none d-lg-inline-block d-xl-inline-block">
+                        Create Class Routine</strong>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="control-panel-content part-2 mt-2  clearfix float-right" style="width:74%">
+
+        <!-- Teacher Registration Form starts Here-->
+        <div class=" collapse text-white control-panel clearfix p-5 mr-4 clearfix row" id="item1">
+            <h5 class="p-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">Teachers's Registration Form</h5>
+            <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <label for="Name">Name</label>
+                <div class="form-row mb-2 ">
+                    <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mr-sm-4 mr-0">
+                        <input type="text" class="form-control " placeholder="First name">
+                    </div>
+                    <div class="d-block d-inline-sm-block ml-sm-3">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="staticEmail">Email</label>
+
+                    <input type="email" class="form-control" id="staticEmail" value="email@example.com">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAppointmentLatterNo">Appointment Letter ID</label>
+                    <input type="text" class="form-control" id="inputAppointmentLatterNo" placeholder="2021-XmDLtX">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                <p class="text-white">Upload Your Image</p>
+                <div class="custom-file mt-0 text-white">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label " for="validatedCustomFile">Choose file...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+                <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+            </form>
+        </div>
+        <!-- Teacher Registration Form Ends here-->
+        <!-- Student Registration Form Starts here-->
+
+        <div class="collapse text-white control-panel p-5 mr-4 clearfix row" id="item3">
+            <h5 class="p-3 text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Students' Registration Form</h5>
+            <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <label for="Name">Name</label>
+                <div class="form-row mb-2">
+
+                    <div class="d-inline-sm-block d-block mr-sm-3 ml-sm-1 mb-1 mr-0">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="d-inline-sm-block d-block mt-1 mt-sm-0 ml-1">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="staticEmail2">Email</label>
+
+                    <input type="email" class="form-control" id="staticEmail2" value="email@example.com">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAddress2">Address</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAppointmentLatterNo2">Roll Number</label>
+                    <input type="text" class="form-control" id="inputAppointmentLatterNo2" placeholder="2021-XmDLtX">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword42">Password</label>
+                    <input type="password" class="form-control" id="inputPassword42" placeholder="Password">
+                </div>
+                <p class="text-white">Upload Your Image</p>
+                <div class="custom-file mt-0">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile2" required>
+                    <label class="custom-file-label" for="validatedCustomFile2">Choose file...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+                <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+            </form>
+
+        </div>
+        <!-- Student Registration Form Ends here-->
+        <!-- Management form Starts here-->
+        <div class="collapse text-white control-panel clearfix p-5 mr-4" id="item5">
+            <h5 class="p-3 text-center">Managements' Registration Form</h5>
+            <form>
+                <label for="Name">Name</label>
+                <div class="form-row mb-2">
+
+                    <div class="d-block d-inline-sm-block mr-sm-4 mb-1 ml-1">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="d-block d-inline-sm-block mb-1 ml-1">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="staticEmail3">Email</label>
+
+                    <input type="email" readonly class="form-control" id="staticEmail3" value="email@example.com">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAddress3">Address</label>
+                    <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAppointmentLatterNo3">Appointment Latter ID</label>
+                    <input type="text" class="form-control" id="inputAppointmentLatterNo3" placeholder="2021-XmDLtX">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword43">Password</label>
+                    <input type="password" class="form-control" id="inputPassword43" placeholder="Password">
+                </div>
+                <p class="text-white">Upload Your Image</p>
+                <div class="custom-file mt-0">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile3" required>
+                    <label class="custom-file-label" for="validatedCustomFile3">Choose file...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+                <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+            </form>
+        </div>
+        <!--Management form ends here-->
+        <!--Sub and Class Creation here-->
+        <div class="collapse" id="item7">
+            <div class="control-panel  mr-3 mt-3 row">
+
+                <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h5 class=" text-white pt-3">Create Class and Subject</h5>
+                </div>
+                <div class="dropdown d-inline-block col-xl-3 offset-xl-2">
+                    <button type="button" class="btn btn-success control-panel ml-5  text-white  dropdown-toggle" data-toggle="dropdown">
+                        Make choice </button>
+                    <div class="dropdown-menu control-panel">
+                        <div class="dropdown-item drop-hover">
+                            <a data-toggle="collapse" class="text-white" data-target="">Class</a>
+                        </div>
+                        <div class="dropdown-item drop-hover">
+                            <a data-toggle="collapse" class="text-white" data-target="">Subject</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 d-inline-block">
+                    <input type="text" class="form-control " placeholder="Insert Your Subject or Class Name to Create">
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-3">
+                    <button class="btn btn-success float-right ">Submit</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="collapse" id="item8">
+            <div class="control-panel  mr-3 mt-3">
+                <div class="control-panel mr-3 mt-3 pb-5 p-3 row clearfix">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h5 class="text-white "> Assign Subjcect to Class </h5>
+                    </div>
+                    <div class="dropdown offset-xl-3 col-xl-3">
+                        <button type="button" class="btn btn-success control-panel ml-5  text-white  dropdown-toggle" data-toggle="dropdown">
+                        Choose Class</button>
+                        <div class="dropdown-menu control-panel">
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Class 1</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Class 2</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Class 4</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Class 5</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Class 6</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-inline-block col-xl-2 ">
+                        <button type="button" class="btn btn-success control-panel ml-0  text-white  dropdown-toggle" data-toggle="dropdown">
+                        Choose Subject  </button>
+                        <div class="dropdown-menu control-panel">
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Subject 1</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Subject 2</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Subject 3</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Subject 4</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a data-toggle="collapse" class="text-white" data-target="">Subject 6</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 p-1">
+                        <button class="btn btn-success float-right">Assign</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subject and Class Creation Ends here-->
+        <div class="control-panel mr-4 p-5 collapse" id="item9">
+            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <h5 class="text-white">Please Choose class to set the class routine</h5>
+            </div>
+            <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0">
+                <a class=" control-panel mt-3 text-white  dropdown-toggle btn btn-success " data-toggle="dropdown">
+                        Select Class
+                </a>
+                <div class="dropdown-menu control-panel">
+                    <div class="dropdown-item drop-hover">
+                        <a target="_blank" href="class-routine.html" class="text-white">Class 1</a>
+                    </div>
+                    <div class="dropdown-item drop-hover">
+                        <a target="_blank" href="class-routine.html" class="text-white">Class 2</a>
+                    </div>
+                    <div class="dropdown-item drop-hover">
+                        <a class="text-white" href="class-routine.html" target="_blank">Class 3</a>
+                    </div>
+                    <div class="dropdown-item drop-hover">
+                        <a class="text-white" href="class-routine.html" target="_blank">Class 4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class=" container-fluid control-panel mt-4 p-3 " style="overflow: hidden; ">
+        <h5 class="text-center text-white ">Copyright &copy Reserved Rsoftbd</h5>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="https://kit.fontawesome.com/998d7906b0.js " crossorigin="anonymous "></script>
+</body>
+
+</html>
