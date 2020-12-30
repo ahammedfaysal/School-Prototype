@@ -368,6 +368,12 @@
         margin: 0 auto;
     }
     
+    .class-name-parent input {
+        width: 300px;
+        margin: 10px;
+        display: inline-block
+    }
+    
     @media only screen and (max-width: 1200px) {
         /* style for extra large screen*/
     }
