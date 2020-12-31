@@ -67,247 +67,283 @@
                 <h5 class="title pb-1 text-white text-center ml-1 mr-1 pl-3 pr-2 d-sm-none d-none d-md-block d-lg-block d-xl-block" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">Control Widget</h5>
                 <p class="title pb-1 text-white ml-1 text-center d-block d-sm-block d-md-none d-lg-none d-xl-none" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">CW</p>
             </div>
-            <div class="navbar nav">
-                <ul class="nav-menu  list-unstyled">
-                    <li class="nav-item"><a class="nav-link text-white" data-toggle="collapse" data-target="#item1">Account Creation</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" data-toggle="collapse" data-target="#item2">Admit card Issue</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" data-toggle="collapse" data-target="#item3">Class & Subject Creation</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" data-toggle="collapse" data-target="#item9">Create a class Routine</a></li>
 
+            <ul class="nav-pills nav flex-column" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="account-creation" data-toggle="pill" href="#account"
+                        role="tab" aria-controls="account" aria-selected="true"><i class="far fa-user p-1 mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Creation   </span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="admit=card-issue" data-toggle="pill" href="#admit"
+                        role="tab" aria-controls="admit" aria-selected="false"><i class="far fa-id-card mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Admit card Issue</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="class-subject-creation" data-toggle="pill" href="#class_subject"
+                        role="tab" aria-controls="class_subject" aria-selected="false"><i class="fas fa-book mr-2 fa-inverse"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Class & Subject Creation</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="class-routine" data-toggle="pill" href="#routine"
+                        role="tab" aria-controls="routine" aria-selected="false"><i class="far fa-calendar-alt mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Create class Routine</span></a>
+                </li>
+            </ul>
 
-                </ul>
-            </div>
         </div>
 
     </div>
     <!--Registration part-->
-    <div class="control-panel-content part-2 mt-2 mb-3 clearfix float-right" style="width:74%">
+    <div class="control-panel-content part-2 clearfix float-right" style="width:74%">
+        <div class="tab-content" id="pills-tabContent">
+            <div class=" mr-3 mt-4 p-4 tab-pane" aria-labelledby="account-creation" role="tabpanel" id="account">
+                <div class="control-panel mr-3 mt-4 p-4 ml-0">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Teacher Registration</a>
+                        </li>
+                        <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Student Registration</a>
+                        </li>
+                        <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Accountant Registration</a>
+                        </li>
+                    </ul>
 
-        <div class="collapse control-panel mr-3 mt-4 p-4" id="item1">
+                    <div class="tab-content">
+                        <div class="tab-pane active clearfix" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <!-- Teacher Registration Form starts Here-->
+                            <div class="text-white">
+                                <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">Teachers's Registration Form</h5>
+                                <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
+                                    <label for="Name">Name</label>
+                                    <div class="form-row mb-2 ">
+                                        <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
+                                            <input type="text" class="form-control " placeholder="First name">
+                                        </div>
+                                        <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
 
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Teacher Registration</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Student Registration</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Accountant Registration</a>
-                </li>
-            </ul>
+                                    <div class="form-group">
+                                        <label for="staticEmail">Email</label>
 
-            <div class="tab-content">
-                <div class="tab-pane active clearfix" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <!-- Teacher Registration Form starts Here-->
-                    <div class="text-white">
-                        <h5 class="p-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">Teachers's Registration Form</h5>
-                        <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <label for="Name">Name</label>
-                            <div class="form-row mb-2 ">
-                                <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mr-sm-4 mr-0">
-                                    <input type="text" class="form-control " placeholder="First name">
+                                        <input type="email" class="form-control" id="staticEmail" value="email@example.com">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="designaiton">Designation</label>
+
+                                        <input type="email" class="form-control" id="designaiton" value="Lecturer">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="department">Department</label>
+
+                                        <input type="email" class="form-control" id="department" value="Science">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputAddress">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAppointmentLatterNo">Appointment Letter ID</label>
+                                        <input type="text" class="form-control" id="inputAppointmentLatterNo" placeholder="2021-XmDLtX">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword4">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    </div>
+                                    <p class="text-white">Upload Your Image</p>
+                                    <div class="custom-file mt-0 text-white">
+                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                        <label class="custom-file-label " for="validatedCustomFile">Choose file</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+                                </form>
+
+                                <!-- Teacher Registration Form Ends here-->
+                            </div>
+                        </div>
+                        <div class="tab-pane clearfix text-white" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+                            <!-- Student Registration Form Starts here-->
+
+
+                            <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Students' Registration Form</h5>
+                            <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
+                                <label for="Name">Name</label>
+                                <div class="form-row mb-2 ">
+                                    <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
+                                        <input type="text" class="form-control " placeholder="First name">
+                                    </div>
+                                    <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
                                 </div>
-                                <div class="d-block d-inline-sm-block ml-sm-3">
-                                    <input type="text" class="form-control" placeholder="Last name">
+
+                                <div class="form-group">
+                                    <label for="staticEmail2">Email</label>
+
+                                    <input type="email" class="form-control" id="staticEmail2" value="email@example.com">
+
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="staticEmail">Email</label>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAppointmentLatterNo2">Roll Number</label>
+                                    <input type="text" class="form-control" id="inputAppointmentLatterNo2" placeholder="2021-XmDLtX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword42">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword42" placeholder="Password">
+                                </div>
+                                <p class="text-white">Upload Your Image</p>
+                                <div class="custom-file mt-0">
+                                    <input type="file" class="custom-file-input" id="validatedCustomFile2" required>
+                                    <label class="custom-file-label" for="validatedCustomFile2">Choose file...</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                </div>
+                                <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+                            </form>
 
-                                <input type="email" class="form-control" id="staticEmail" value="email@example.com">
 
-                            </div>
+                            <!-- Student Registration Form Ends here-->
 
-                            <div class="form-group">
-                                <label for="inputAddress">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAppointmentLatterNo">Appointment Letter ID</label>
-                                <input type="text" class="form-control" id="inputAppointmentLatterNo" placeholder="2021-XmDLtX">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword4">Password</label>
-                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                            </div>
-                            <p class="text-white">Upload Your Image</p>
-                            <div class="custom-file mt-0 text-white">
-                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                                <label class="custom-file-label " for="validatedCustomFile">Choose file...</label>
-                                <div class="invalid-feedback">Example invalid custom file feedback</div>
-                            </div>
-                            <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
-                        </form>
 
-                        <!-- Teacher Registration Form Ends here-->
+
+
+
+                        </div>
+                        <div class="tab-pane clearfix text-white" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+
+
+
+                            <!-- Management form Starts here-->
+                            <div class=" text-white" id="item5">
+                                <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 text-center">Accounts Registration Form</h5>
+                                <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
+                                    <label for="Name">Name</label>
+                                    <div class="form-row mb-2 ">
+                                        <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
+                                            <input type="text" class="form-control " placeholder="First name">
+                                        </div>
+                                        <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="staticEmail3">Email</label>
+
+                                        <input type="email" readonly class="form-control" id="staticEmail3" value="email@example.com">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="designaiton-acc">Designation</label>
+
+                                        <input type="email" class="form-control" id="designaiton-acc" value="Junior Accountant">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="department-acc">Department</label>
+
+                                        <input type="email" class="form-control" id="department-acc" value="Accounts">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputAddress3">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAppointmentLatterNo3">Appointment Latter ID</label>
+                                        <input type="text" class="form-control" id="inputAppointmentLatterNo3" placeholder="2021-XmDLtX">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword43">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword43" placeholder="Password">
+                                    </div>
+                                    <p class="text-white">Upload Your Image</p>
+                                    <div class="custom-file mt-0">
+                                        <input type="file" class="custom-file-input" id="validatedCustomFile3" required>
+                                        <label class="custom-file-label" for="validatedCustomFile3">Choose file...</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+                                </form>
+                            </div>
+                            <!--Management form ends here-->
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane clearfix text-white" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
-
-                    <!-- Student Registration Form Starts here-->
-
-
-                    <h5 class="p-3 text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Students' Registration Form</h5>
-                    <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <label for="Name">Name</label>
-                        <div class="form-row mb-2">
-
-                            <div class="d-inline-sm-block d-block mr-sm-3 ml-sm-1 mb-1 mr-0">
-                                <input type="text" class="form-control" placeholder="First name">
-                            </div>
-                            <div class="d-inline-sm-block d-block mt-1 mt-sm-0 ml-1">
-                                <input type="text" class="form-control" placeholder="Last name">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="staticEmail2">Email</label>
-
-                            <input type="email" class="form-control" id="staticEmail2" value="email@example.com">
-
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputAddress2">Address</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAppointmentLatterNo2">Roll Number</label>
-                            <input type="text" class="form-control" id="inputAppointmentLatterNo2" placeholder="2021-XmDLtX">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword42">Password</label>
-                            <input type="password" class="form-control" id="inputPassword42" placeholder="Password">
-                        </div>
-                        <p class="text-white">Upload Your Image</p>
-                        <div class="custom-file mt-0">
-                            <input type="file" class="custom-file-input" id="validatedCustomFile2" required>
-                            <label class="custom-file-label" for="validatedCustomFile2">Choose file...</label>
-                            <div class="invalid-feedback">Example invalid custom file feedback</div>
-                        </div>
-                        <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
-                    </form>
-
-
-                    <!-- Student Registration Form Ends here-->
-
-
-
-
-
-                </div>
-                <div class="tab-pane clearfix text-white" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-
-
-
-                    <!-- Management form Starts here-->
-                    <div class=" text-white" id="item5">
-                        <h5 class="p-3 text-center">Managements' Registration Form</h5>
-                        <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <label for="Name">Name</label>
-                            <div class="form-row mb-2">
-
-                                <div class="d-block d-inline-sm-block mr-sm-4 mb-1 ml-1">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                </div>
-                                <div class="d-block d-inline-sm-block mb-1 ml-1">
-                                    <input type="text" class="form-control" placeholder="Last name">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="staticEmail3">Email</label>
-
-                                <input type="email" readonly class="form-control" id="staticEmail3" value="email@example.com">
-
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputAddress3">Address</label>
-                                <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAppointmentLatterNo3">Appointment Latter ID</label>
-                                <input type="text" class="form-control" id="inputAppointmentLatterNo3" placeholder="2021-XmDLtX">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword43">Password</label>
-                                <input type="password" class="form-control" id="inputPassword43" placeholder="Password">
-                            </div>
-                            <p class="text-white">Upload Your Image</p>
-                            <div class="custom-file mt-0">
-                                <input type="file" class="custom-file-input" id="validatedCustomFile3" required>
-                                <label class="custom-file-label" for="validatedCustomFile3">Choose file...</label>
-                                <div class="invalid-feedback">Example invalid custom file feedback</div>
-                            </div>
-                            <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
-                        </form>
+            </div>
+            <!--registration section ends here-->
+            <!--Sub and Class Creation here-->
+            <div class="tab-pane show fade" aria-labelledby="class-subject-creation" role="tabpanel" id="class_subject">
+                <div class=" control-panel mr-3 mt-4 mb-3 p-4 ml-0 row clearfix">
+                    <div class="form-group w-100">
+                        <h5 class="text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-0">Write the Class Name You want to create</h5>
+                        <input type="text" name="" id="" class="form-control col-xl-11 ml-xl-4 mt-4 col-lg-11 ml-lg-3 col-md-10 ml-md-5 col-sm-11 ml-sm-2 col-11 ml-1" placeholder="Write the class Name ,eg: Class 1(M/D)">
                     </div>
-                    <!--Management form ends here-->
+                    <div class="w-100 clearfix row">
+                        <div class="float-left col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+                            <h5 class="text-white ml-xl-1 ml-lg-2  ">Please Enter The subject Name</h5>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+                            <button class="btn btn-primary  float-right btn-sm mb-2" onclick="removebutton()">   <span class="mr-1">&times;</span>Remove last field </button>
+                            <button class="btn btn-primary float-right btn-sm mr-lg-2 mr-xl-2 mb-xl-0 mb-lg-0 mr-sm-2 mb-sm-0 mb-3" onclick="addbutton()">  <span>&#43;</span> Add  more fields </button>
+                        </div>
+                    </div>
+                    <div id="subject-parent" class="w-100 ml-2 row form-group">
+                        <input type="text" id="" class="form-control col-xl-3 col-lg-3 m-md-3 m-sm-1 m-1 col-md-3 col-sm-5 col-10" placeholder="insert subjcet name">
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-3">
+                        <button class="btn btn-success float-right ">Create</button>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <!--registration section ends here-->
-        <!--Sub and Class Creation here-->
-        <div class="collapse" id="item3">
-            <div class="control-panel  mr-3 mt-3 row">
-                <div class="form-group pt-2 pl-4 col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <h5 class="text-white">Write the Class Name You want to create</h5>
-                    <input type="text" name="" id="" class="form-control mt-4" placeholder="Write the class Name ,eg: Class 1(M/D)">
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-block">
-                    <h5 class="text-white ml-2 mt-3">Please Enter The subject Name</h5>
+            <!-- Subject and Class Creation Ends here-->
 
-                    <button class="btn btn-primary  float-right btn-sm mt-3 m-2" onclick="addbutton()">  <span>&#43;</span> Add  more fields </button>
-
-                    <button class="btn btn-primary  float-right btn-sm mt-3 " onclick="removebutton()">   <span class="mr-1">&times;</span>Remove last field </button>
-                </div>
-                <div id="subject-parent" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-4 form-group class-name-parent">
-                    <input type="text" id="" class="form-control" placeholder="insert subjcet name">
-
-
-
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-3">
-                    <button class="btn btn-success float-right ">Create</button>
-                </div>
-
-            </div>
-        </div>
-        <!-- Subject and Class Creation Ends here-->
-
-        <!--Your Routine make here-->
-        <div class=" collapse mr-3 mt-3" id="item9">
-            <div class="control-panel p-5">
-                <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <h5 class="text-white">Please Choose class to set the class routine</h5>
-                </div>
-                <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0">
-                    <a class=" control-panel mt-3 text-white  dropdown-toggle btn btn-success " data-toggle="dropdown">
+            <!--Your Routine make here-->
+            <div class="tab-pane fade mr-3 mt-3" aria-labelledby="class-routine" id="routine">
+                <div class="control-panel p-lg-5 p-md-5 p-lg-5 p-sm-5 p-2 mb-3">
+                    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12  ">
+                        <h5 class="text-white">Please Choose class to set the class routine</h5>
+                    </div>
+                    <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0">
+                        <a class=" control-panel mt-3 text-white  dropdown-toggle btn btn-success " data-toggle="dropdown">
                         Select Class
                 </a>
-                    <div class="dropdown-menu control-panel">
-                        <div class="dropdown-item drop-hover">
-                            <a target="_blank" href="class-routine.html" class="text-white">Class 1</a>
-                        </div>
-                        <div class="dropdown-item drop-hover">
-                            <a target="_blank" href="class-routine.html" class="text-white">Class 2</a>
-                        </div>
-                        <div class="dropdown-item drop-hover">
-                            <a class="text-white" href="class-routine.html" target="_blank">Class 3</a>
-                        </div>
-                        <div class="dropdown-item drop-hover">
-                            <a class="text-white" href="class-routine.html" target="_blank">Class 4</a>
+                        <div class="dropdown-menu control-panel">
+                            <div class="dropdown-item drop-hover">
+                                <a target="_blank" href="class-routine.html" class="text-white">Class 1</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a target="_blank" href="class-routine.html" class="text-white">Class 2</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a class="text-white" href="class-routine.html" target="_blank">Class 3</a>
+                            </div>
+                            <div class="dropdown-item drop-hover">
+                                <a class="text-white" href="class-routine.html" target="_blank">Class 4</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <footer class=" container-fluid control-panel mt-4 p-3 " style="overflow: hidden; ">
         <h5 class="text-center text-white ">Copyright &copy Reserved Rsoftbd</h5>
@@ -326,7 +362,7 @@
             b = document.createElement('input');
             b.setAttribute('type', 'text');
             b.setAttribute('id', 'subject-id');
-            b.setAttribute('class', 'form-control');
+            b.setAttribute('class', 'form-control sub-con col-xl-3 m-md-3 m-sm-1 m-1 col-lg-3 col-md-3 col-sm-5 col-10');
             b.setAttribute('placeholder', 'insert subjcet name')
             a.appendChild(b);
         }
@@ -338,7 +374,6 @@
             a.removeChild(b);
         }
     </script>
-
 </body>
 
 </html>

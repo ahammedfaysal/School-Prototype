@@ -368,33 +368,30 @@
         margin: 0 auto;
     }
     
-    .class-name-parent input {
-        width: 300px;
-        margin: 10px;
-        display: inline-block
-    }
-    
     @media only screen and (max-width: 1200px) {
         /* style for extra large screen*/
+        .reg-men li a {
+            padding: 7px;
+        }
     }
     
     @media only screen and (max-width: 992px) {
         /* style for large screen*/
+        .reg-men li a {
+            padding: 7px;
+        }
     }
     
     @media only screen and (max-width: 768px) {
         /* Medium screen */
-        .class-time {
-            font-size: 10px;
+        .reg-men li a {
+            padding: 7px;
         }
     }
     
     @media only screen and (max-width: 576px) {
         /* styles for small */
-        .class-time {
-            font-size: 5px;
-        }
-        .disp-block {
-            width: 100%;
+        .reg-men li a {
+            padding: 7px;
         }
     }
