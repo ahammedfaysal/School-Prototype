@@ -74,7 +74,11 @@
                         role="tab" aria-controls="account" aria-selected="true"><i class="far fa-user p-1 mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Creation   </span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="admit=card-issue" data-toggle="pill" href="#admit"
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="account-manage" data-toggle="pill" href="#account-management"
+                        role="tab" aria-controls="account-management" aria-selected="true"><i class="fas fa-diagnoses mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Management</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="admit-card-issue" data-toggle="pill" href="#admit"
                         role="tab" aria-controls="admit" aria-selected="false"><i class="far fa-id-card mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Admit card Issue</span></a>
                 </li>
                 <li class="nav-item">
@@ -93,7 +97,7 @@
     <!--Registration part-->
     <div class="control-panel-content part-2 clearfix float-right" style="width:74%">
         <div class="tab-content" id="pills-tabContent">
-            <div class=" mr-3 mt-4 p-4 tab-pane" aria-labelledby="account-creation" role="tabpanel" id="account">
+            <div class=" mr-3 mt-4 p-0 p-sm-4 tab-pane" aria-labelledby="account-creation" role="tabpanel" id="account">
                 <div class="control-panel mr-3 mt-4 p-4 ml-0">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -288,6 +292,78 @@
                 </div>
             </div>
             <!--registration section ends here-->
+            <!-- Account Management starts here-->
+            <div class=" mr-3 mt-4 p-4 tab-pane control-panel mb-4" aria-labelledby="account-manage" role="tabpanel" id="account-management">
+                <div class="row justify-content-center" id="userProfile-edit">
+                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                        <div class="card-body p-2">
+                            <p class="card-text editable  ">User Name</p>
+                            <p class="card-text">User ID</p>
+                            <p class="card-text editable ">Designation</p>
+                            <p class="card-text editable ">Password</p>
+                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id1" onclick="edit_user('id1')">Edit Info</a>
+                            <a href="# " class="btn btn-info m-2 ml-0 " id="id1_2" onclick="deactivate_account('id1_2')">Deactive Account</a>
+                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                        </div>
+                    </div>
+                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                        <div class="card-body p-2">
+                            <p class="card-text editable  ">User Name</p>
+                            <p class="card-text">User ID</p>
+                            <p class="card-text editable ">Designation</p>
+                            <p class="card-text editable ">Password</p>
+                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id2" onclick="edit_user('id2')">Edit Info</a>
+                            <a href="# " class="btn btn-info m-2 ml-0 " id="id2_2" onclick="deactivate_account('id2_2')">Deactive Account</a>
+                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                        </div>
+                    </div>
+                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                        <div class="card-img-top d-flex mt-3 justify-content-center"><i class="fa fa-user "></i></div>
+                        <div class="card-body p-2">
+                            <p class="card-text editable  ">User Name</p>
+                            <p class="card-text">User ID</p>
+                            <p class="card-text editable ">Designation</p>
+                            <p class="card-text editable ">Password</p>
+                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id3" onclick="edit_user('id3')">Edit Info</a>
+                            <a href="# " class="btn btn-info m-2 ml-0 " id="id3_2" onclick="deactivate_account('id3_2')">Deactive Account</a>
+                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                        </div>
+                    </div>
+                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                        <div class="card-body p-2">
+                            <p class="card-text editable  ">User Name</p>
+                            <p class="card-text">User ID</p>
+                            <p class="card-text editable ">Designation</p>
+                            <p class="card-text editable ">Password</p>
+                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id4" onclick="edit_user('id4')">Edit Info</a>
+                            <a href="# " class="btn btn-info m-2 ml-0 " id="id4_2" onclick="deactivate_account('id4_2')">Deactive Account</a>
+                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                        </div>
+                    </div>
+                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                        <div class="card-body p-2">
+                            <p class="card-text editable  ">User Name</p>
+                            <p class="card-text">User ID</p>
+                            <p class="card-text editable ">Designation</p>
+                            <p class="card-text editable ">Password</p>
+                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id5" onclick="edit_user('id5')">Edit Info</a>
+                            <a href="# " class="btn btn-info m-2 ml-0 " id="id5_2" onclick="deactivate_account('id5_2')">Deactive Account</a>
+                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Account Management ends here-->
+
             <!--Sub and Class Creation here-->
             <div class="tab-pane show fade" aria-labelledby="class-subject-creation" role="tabpanel" id="class_subject">
                 <div class=" control-panel mr-3 mt-4 mb-3 p-4 ml-0 row clearfix">
@@ -314,6 +390,7 @@
                 </div>
             </div>
             <!-- Subject and Class Creation Ends here-->
+
 
             <!--Your Routine make here-->
             <div class="tab-pane fade mr-3 mt-3" aria-labelledby="class-routine" id="routine">
@@ -372,6 +449,64 @@
             b = document.getElementById('subject-id');
             console.log(b);
             a.removeChild(b);
+        }
+
+
+        let user_id;
+
+        function deactivate_account(user_id) {
+            let deac_acc = document.getElementById(user_id);
+            deac_acc.textContent = 'activate account';
+        }
+
+        function edit_user(user_id) {
+            let user_button = document.getElementById(user_id);
+            let table = user_button.parentNode;
+            user_button.textContent = 'submit';
+            let cells = table.getElementsByClassName('editable');
+            for (var i = 0; i < cells.length; i++) {
+                cells[i].onclick = function() {
+                    if (this.hasAttribute('data-clicked')) {
+                        return;
+                    }
+                    this.setAttribute('data-clicked', 'yes');
+                    this.setAttribute('data-text', this.innerHTML);
+                    var input = document.createElement('input');
+                    input.setAttribute('type', 'text');
+                    input.value = this.innerHTML;
+                    input.style.widht = this.offsetWidth - (this.clientLeft * 2) + 'px';
+                    input.style.height = this.offsetHeight - (this.cleintTop * 2) + 'px';
+                    input.style.border = "0px "
+                    input.style.fontFamily = "inherit ";
+                    input.style.fontSize = "inherit ";
+                    input.style.textAlign = "inherit ";
+                    input.style.backgroundColor = "LightGoldRodYellow ";
+                    input.onblur = function() {
+
+                        var sub = input.parentElement;
+                        var original_text = input.parentElement.getAttribute('data-text');
+                        var current_text = this.value;
+                        if (original_text != current_text) {
+                            sub.removeAttribute('data-clicked');
+                            sub.removeAttribute('data-text');
+                            sub.innerHTML = current_text;
+                            sub.style.cssText = "padding:5px ";
+                            console.log('your data has been changed');
+                        } else {
+                            sub.removeAttribute('data-clicked');
+                            sub.removeAttribute('data-text');
+                            sub.innerHTML = original_text;
+                            sub.style.cssText = "padding:5px ";
+                            console.log('no change has made');
+                        }
+                    }
+                    this.innerHTML = " ";
+                    this.style.cssText = "padding:0px 0px ";
+                    this.append(input);
+                    this.firstElementChild.select();
+                }
+            }
+
         }
     </script>
 </body>
