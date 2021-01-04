@@ -383,7 +383,22 @@
                     <div id="subject-parent" class="w-100 ml-2 row form-group">
                         <input type="text" id="" class="form-control col-xl-3 col-lg-3 m-md-3 m-sm-1 m-1 col-md-3 col-sm-5 col-10" placeholder="insert subjcet name">
                     </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-3">
+
+
+                    <div class="w-100 clearfix row">
+                        <div class="float-left col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+                            <h5 class="text-white ml-xl-1 ml-lg-2  ">Create Time frame</h5>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+                            <button class="btn btn-primary  float-right btn-sm mb-2" onclick="removebutton2()">   <span class="mr-1">&times;</span>Remove last field </button>
+                            <button class="btn btn-primary float-right btn-sm mr-lg-2 mr-xl-2 mb-xl-0 mb-lg-0 mr-sm-2 mb-sm-0 mb-3" onclick="addbutton2()">  <span>&#43;</span> Add  more fields </button>
+                        </div>
+                    </div>
+
+                    <div id="subject-parent2" class="w-100 ml-2 row form-group">
+                        <input type="text" id="" class="form-control col-xl-3 col-lg-3 m-md-3 m-sm-1 m-1 col-md-3 col-sm-5 col-10" placeholder="9:10-10:10">
+                    </div>
+                    <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-3 ">
                         <button class="btn btn-success float-right ">Create</button>
                     </div>
 
@@ -393,27 +408,27 @@
 
 
             <!--Your Routine make here-->
-            <div class="tab-pane fade mr-3 mt-3" aria-labelledby="class-routine" id="routine">
-                <div class="control-panel p-lg-5 p-md-5 p-lg-5 p-sm-5 p-2 mb-3">
-                    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12  ">
-                        <h5 class="text-white">Please Choose class to set the class routine</h5>
+            <div class="tab-pane fade mr-3 mt-3 " aria-labelledby="class-routine " id="routine ">
+                <div class="control-panel p-lg-5 p-md-5 p-lg-5 p-sm-5 p-2 mb-3 ">
+                    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                        <h5 class="text-white ">Please Choose class to set the class routine</h5>
                     </div>
-                    <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0">
-                        <a class=" control-panel mt-3 text-white  dropdown-toggle btn btn-success " data-toggle="dropdown">
+                    <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0 ">
+                        <a class=" control-panel mt-3 text-white dropdown-toggle btn btn-success " data-toggle="dropdown ">
                         Select Class
-                </a>
-                        <div class="dropdown-menu control-panel">
-                            <div class="dropdown-item drop-hover">
-                                <a target="_blank" href="class-routine.html" class="text-white">Class 1</a>
+                                 </a>
+                        <div class="dropdown-menu control-panel ">
+                            <div class="dropdown-item drop-hover ">
+                                <a target="_blank " href="class-routine.html " class="text-white ">Class 1</a>
                             </div>
-                            <div class="dropdown-item drop-hover">
-                                <a target="_blank" href="class-routine.html" class="text-white">Class 2</a>
+                            <div class="dropdown-item drop-hover ">
+                                <a target="_blank " href="class-routine.html " class="text-white ">Class 2</a>
                             </div>
-                            <div class="dropdown-item drop-hover">
-                                <a class="text-white" href="class-routine.html" target="_blank">Class 3</a>
+                            <div class="dropdown-item drop-hover ">
+                                <a class="text-white " href="class-routine.html " target="_blank ">Class 3</a>
                             </div>
-                            <div class="dropdown-item drop-hover">
-                                <a class="text-white" href="class-routine.html" target="_blank">Class 4</a>
+                            <div class="dropdown-item drop-hover ">
+                                <a class="text-white " href="class-routine.html " target="_blank ">Class 4</a>
                             </div>
                         </div>
                     </div>
@@ -444,6 +459,16 @@
             a.appendChild(b);
         }
 
+        function addbutton2() {
+            a = document.getElementById('subject-parent2');
+            b = document.createElement('input');
+            b.setAttribute('type', 'text');
+            b.setAttribute('id', 'subject-id2');
+            b.setAttribute('class', 'form-control sub-con col-xl-3 m-md-3 m-sm-1 m-1 col-lg-3 col-md-3 col-sm-5 col-10');
+            b.setAttribute('placeholder', 'insert subjcet name')
+            a.appendChild(b);
+        }
+
         function removebutton() {
             a = document.getElementById('subject-parent');
             b = document.getElementById('subject-id');
@@ -451,6 +476,12 @@
             a.removeChild(b);
         }
 
+        function removebutton2() {
+            a = document.getElementById('subject-parent2');
+            b = document.getElementById('subject-id2');
+            console.log(b);
+            a.removeChild(b);
+        }
 
         let user_id;
 
