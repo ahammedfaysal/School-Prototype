@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="background:#162036">
+    <div class="container-fluid p-0 m-0">
+
+        <nav class="p-2 navbar navbar-expand-sm navbar-dark control-panel " style="box-shadow: 0ch 0cm 4cm #1E1E1E">
+
+            <div class="container-fluid row">
+
+                <div class="branding col-xl-6 col-md-6 col-sm-6 col-lg-6 col-12 ml-5">
+                    <i class="fas fa-school fa-2x fa-inverse"></i>
+                    <a class="navbar-brand  p-2" href="#">SchoolName</a>
+                </div>
+                <button class="mx-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse col-xl-6 col-md-6 col-sm-6 col-lg-6 col-12 " id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-5 ml-lg-auto ml-xl-auto ml-md-auto ml-sm-auto" style="margin-left:100px">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link postion-relative">
+                                <p class=" font-weight-bold position-absolute text-white rounded-circle  text-center" style="margin: -9px 0px 0px 7px;;"><strong class="text-warning" style="font-size: 50px;line-height: 2px;">.</strong></p><i class="far fa-envelope-open fa-1x fa-inverse"></i></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-user-circle fa-1x fa-inverse"></i></a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="userProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                            <div class="dropdown-menu p-2 bb-dark" aria-labelledby="userProfile" style="margin-left: -80px;">
+                                <a href="#" class="d-block pb-1 pt-1 text-white "><i class="far fa-user mr-3 ml-2"></i>Xmass Duo</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-fingerprint ml-2 mr-3"></i> AB0956</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-cog ml-2 mr-3"></i>Setting</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-sign-out-alt ml-2 mr-3"></i>Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div class="container p-4 control-panel mt-3">
+
+        <div class="row d-flex justify-content-center">
+            <div class="m-3 col-xl-12 col-lg-11 col-md-12 col-sm-12 col-12">
+                <h5 class="text-white">Students profile of class XXX</h5>
+            </div>
+            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                <div class="card-body p-2">
+                    <p class="card-text editable  ">User Name</p>
+                    <p class="card-text">User ID</p>
+                    <p class="card-text editable ">Designation</p>
+                    <p class="card-text editable ">Password</p>
+                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id1" onclick="edit_user('id1')">Edit Info</a>
+                    <a href="# " class="btn btn-info m-2 ml-0 " id="id1_2" onclick="deactivate_account('id1_2')">Deactive Account</a>
+                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                </div>
+            </div>
+            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                <div class="card-body p-2">
+                    <p class="card-text editable  ">User Name</p>
+                    <p class="card-text">User ID</p>
+                    <p class="card-text editable ">Designation</p>
+                    <p class="card-text editable ">Password</p>
+                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id2" onclick="edit_user('id2')">Edit Info</a>
+                    <a href="# " class="btn btn-info m-2 ml-0 " id="id2_2" onclick="deactivate_account('id2_2')">Deactive Account</a>
+                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                </div>
+            </div>
+            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                <div class="card-img-top d-flex mt-3 justify-content-center"><i class="fa fa-user "></i></div>
+                <div class="card-body p-2">
+                    <p class="card-text editable  ">User Name</p>
+                    <p class="card-text">User ID</p>
+                    <p class="card-text editable ">Designation</p>
+                    <p class="card-text editable ">Password</p>
+                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id3" onclick="edit_user('id3')">Edit Info</a>
+                    <a href="# " class="btn btn-info m-2 ml-0 " id="id3_2" onclick="deactivate_account('id3_2')">Deactive Account</a>
+                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                </div>
+            </div>
+            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                <div class="card-body p-2">
+                    <p class="card-text editable  ">User Name</p>
+                    <p class="card-text">User ID</p>
+                    <p class="card-text editable ">Designation</p>
+                    <p class="card-text editable ">Password</p>
+                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                    <a href="javascript:void(); " class="btn btn-primary m-2 ml-0 " id="id4" onclick="edit_user('id4')">Edit Info</a>
+                    <a href="# " class="btn btn-info m-2 ml-0 " id="id4_2" onclick="deactivate_account('id4_2')">Deactive Account</a>
+                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                </div>
+            </div>
+            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                <div class="card-body p-2">
+                    <p class="card-text editable  ">User Name</p>
+                    <p class="card-text">User ID</p>
+                    <p class="card-text editable ">Designation</p>
+                    <p class="card-text editable ">Password</p>
+                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                    <a href="javascript:void();" class="btn btn-primary m-2 ml-0 " id="id5" onclick="edit_user('id5')">Edit Info</a>
+                    <a href="# " class="btn btn-info m-2 ml-0 " id="id5_2" onclick="deactivate_account('id5_2')">Deactive Account</a>
+                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class=" container-fluid control-panel mt-4 p-3 " style="overflow: hidden; ">
+        <h5 class="text-center text-white ">Copyright &copy Reserved Rsoftbd</h5>
+    </footer>
+
+
+
+    <script src="../js/jquery-3.2.1.slim.min.js "></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/998d7906b0.js"></script>
+
+    <script>
+        let user_id;
+
+        function deactivate_account(user_id) {
+            let deac_acc = document.getElementById(user_id);
+            deac_acc.textContent = 'activate account';
+        }
+
+        function edit_user(user_id) {
+            let user_button = document.getElementById(user_id);
+            let table = user_button.parentNode;
+            user_button.textContent = 'submit';
+            let cells = table.getElementsByClassName('editable');
+            for (var i = 0; i < cells.length; i++) {
+                cells[i].onclick = function() {
+                    if (this.hasAttribute('data-clicked')) {
+                        return;
+                    }
+                    this.setAttribute('data-clicked', 'yes');
+                    this.setAttribute('data-text', this.innerHTML);
+                    var input = document.createElement('input');
+                    input.setAttribute('type', 'text');
+                    input.value = this.innerHTML;
+                    input.style.widht = this.offsetWidth - (this.clientLeft * 2) + 'px';
+                    input.style.height = this.offsetHeight - (this.cleintTop * 2) + 'px';
+                    input.style.border = "0px "
+                    input.style.fontFamily = "inherit ";
+                    input.style.fontSize = "inherit ";
+                    input.style.textAlign = "inherit ";
+                    input.style.backgroundColor = "LightGoldRodYellow ";
+                    input.onblur = function() {
+
+                        var sub = input.parentElement;
+                        var original_text = input.parentElement.getAttribute('data-text');
+                        var current_text = this.value;
+                        if (original_text != current_text) {
+                            sub.removeAttribute('data-clicked');
+                            sub.removeAttribute('data-text');
+                            sub.innerHTML = current_text;
+                            sub.style.cssText = "padding:5px ";
+                            console.log('your data has been changed');
+                        } else {
+                            sub.removeAttribute('data-clicked');
+                            sub.removeAttribute('data-text');
+                            sub.innerHTML = original_text;
+                            sub.style.cssText = "padding:5px ";
+                            console.log('no change has made');
+                        }
+                    }
+                    this.innerHTML = " ";
+                    this.style.cssText = "padding:0px 0px ";
+                    this.append(input);
+                    this.firstElementChild.select();
+                }
+            }
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

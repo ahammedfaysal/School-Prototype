@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
@@ -294,70 +294,179 @@
             <!--registration section ends here-->
             <!-- Account Management starts here-->
             <div class=" mr-3 mt-4 p-4 tab-pane control-panel mb-4" aria-labelledby="account-manage" role="tabpanel" id="account-management">
-                <div class="row justify-content-center" id="userProfile-edit">
-                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                        <div class="card-body p-2">
-                            <p class="card-text editable  ">User Name</p>
-                            <p class="card-text">User ID</p>
-                            <p class="card-text editable ">Designation</p>
-                            <p class="card-text editable ">Password</p>
-                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id1" onclick="edit_user('id1')">Edit Info</a>
-                            <a href="# " class="btn btn-info m-2 ml-0 " id="id1_2" onclick="deactivate_account('id1_2')">Deactive Account</a>
-                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                    <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <a class="nav-link active" id="teacher-tab" data-toggle="tab" href="#Teacher-profile" role="tab" aria-controls="Teacher-profile" aria-selected="true">Teacher Profile</a>
+                    </li>
+                    <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <a class="nav-link" id="student-tab" data-toggle="tab" href="#student-profile" role="tab" aria-controls="student-profile" aria-selected="false">Student Profile</a>
+                    </li>
+                    <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <a class="nav-link" id="account-tab" data-toggle="tab" href="#accounts-profile" role="tab" aria-controls="accounts-profile" aria-selected="false">Accountants Profile</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="Teacher-profile" aria-labelledby="teacher-tab" role="tabpanel">
+                        <h5 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 my-3 text-white">Teachers Profile</h5>
+                        <div class="row d-flex justify-content-center">
+
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id1" onclick="edit_user('id1')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id1_2" onclick="deactivate_account('id1_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id2" onclick="edit_user('id2')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id2_2" onclick="deactivate_account('id2_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top d-flex mt-3 justify-content-center"><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id3" onclick="edit_user('id3')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id3_2" onclick="deactivate_account('id3_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id4" onclick="edit_user('id4')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id4_2" onclick="deactivate_account('id4_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id5" onclick="edit_user('id5')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id5_2" onclick="deactivate_account('id5_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                        <div class="card-body p-2">
-                            <p class="card-text editable  ">User Name</p>
-                            <p class="card-text">User ID</p>
-                            <p class="card-text editable ">Designation</p>
-                            <p class="card-text editable ">Password</p>
-                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id2" onclick="edit_user('id2')">Edit Info</a>
-                            <a href="# " class="btn btn-info m-2 ml-0 " id="id2_2" onclick="deactivate_account('id2_2')">Deactive Account</a>
-                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                    <div id="student-profile" class="tab-pane fade" role="tabpanel" aria-labelledby="student-tab">
+                        <div class="d-flex justify-content-center form-row">
+                            <!--Student account control section-->
+                            <h5 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white my-3">Please choose you class</h5>
+
+                            <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0 ">
+                                <button class="btn btn-secondary dropdown-toggle control-panel mt-3 text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     Select Class
+                              </button>
+                                <div class="dropdown-menu control-panel" aria-labelledby="dropdownMenuButton">
+                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 1</a>
+                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 2</a>
+                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 3</a>
+                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 4</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                        <div class="card-img-top d-flex mt-3 justify-content-center"><i class="fa fa-user "></i></div>
-                        <div class="card-body p-2">
-                            <p class="card-text editable  ">User Name</p>
-                            <p class="card-text">User ID</p>
-                            <p class="card-text editable ">Designation</p>
-                            <p class="card-text editable ">Password</p>
-                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id3" onclick="edit_user('id3')">Edit Info</a>
-                            <a href="# " class="btn btn-info m-2 ml-0 " id="id3_2" onclick="deactivate_account('id3_2')">Deactive Account</a>
-                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                        </div>
-                    </div>
-                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                        <div class="card-body p-2">
-                            <p class="card-text editable  ">User Name</p>
-                            <p class="card-text">User ID</p>
-                            <p class="card-text editable ">Designation</p>
-                            <p class="card-text editable ">Password</p>
-                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id4" onclick="edit_user('id4')">Edit Info</a>
-                            <a href="# " class="btn btn-info m-2 ml-0 " id="id4_2" onclick="deactivate_account('id4_2')">Deactive Account</a>
-                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                        </div>
-                    </div>
-                    <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                        <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                        <div class="card-body p-2">
-                            <p class="card-text editable  ">User Name</p>
-                            <p class="card-text">User ID</p>
-                            <p class="card-text editable ">Designation</p>
-                            <p class="card-text editable ">Password</p>
-                            <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                            <a href="# " class="btn btn-primary m-2 ml-0 " id="id5" onclick="edit_user('id5')">Edit Info</a>
-                            <a href="# " class="btn btn-info m-2 ml-0 " id="id5_2" onclick="deactivate_account('id5_2')">Deactive Account</a>
-                            <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+
+
+                    <div class="tab-pane fade" id="accounts-profile" aria-labelledby="account-tab">
+
+                        <div class="row d-flex justify-content-center">
+                            <h5 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  my-3 text-white">Accounts Profile</h5>
+
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id10" onclick="edit_user('id10')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id10_2" onclick="deactivate_account('id10_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id6" onclick="edit_user('id6')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id6_2" onclick="deactivate_account('id6_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top d-flex mt-3 justify-content-center"><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id7" onclick="edit_user('id7')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id7_2" onclick="deactivate_account('id7_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id8" onclick="edit_user('id8')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id8_2" onclick="deactivate_account('id8_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
+                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
+                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
+                                <div class="card-body p-2">
+                                    <p class="card-text editable  ">User Name</p>
+                                    <p class="card-text">User ID</p>
+                                    <p class="card-text editable ">Designation</p>
+                                    <p class="card-text editable ">Password</p>
+                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
+                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id9" onclick="edit_user('id9')">Edit Info</a>
+                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id9_2" onclick="deactivate_account('id9_2')">Deactive Account</a>
+                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -408,30 +517,27 @@
 
 
             <!--Your Routine make here-->
-            <div class="tab-pane fade mr-3 mt-3 " aria-labelledby="class-routine " id="routine ">
+            <div class="tab-pane fade mr-3 mt-3 " aria-labelledby="class-routine " id="routine">
                 <div class="control-panel p-lg-5 p-md-5 p-lg-5 p-sm-5 p-2 mb-3 ">
                     <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                         <h5 class="text-white ">Please Choose class to set the class routine</h5>
                     </div>
+
                     <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0 ">
-                        <a class=" control-panel mt-3 text-white dropdown-toggle btn btn-success " data-toggle="dropdown ">
-                        Select Class
-                                 </a>
-                        <div class="dropdown-menu control-panel ">
-                            <div class="dropdown-item drop-hover ">
-                                <a target="_blank " href="class-routine.html " class="text-white ">Class 1</a>
-                            </div>
-                            <div class="dropdown-item drop-hover ">
-                                <a target="_blank " href="class-routine.html " class="text-white ">Class 2</a>
-                            </div>
-                            <div class="dropdown-item drop-hover ">
-                                <a class="text-white " href="class-routine.html " target="_blank ">Class 3</a>
-                            </div>
-                            <div class="dropdown-item drop-hover ">
-                                <a class="text-white " href="class-routine.html " target="_blank ">Class 4</a>
-                            </div>
+                        <button class="btn btn-secondary dropdown-toggle control-panel mt-3 text-white" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     Select Class
+                              </button>
+                        <div class="dropdown-menu control-panel" aria-labelledby="dropdownMenuButton">
+                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 1</a>
+                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 2</a>
+                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 3</a>
+                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 4</a>
                         </div>
                     </div>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -442,11 +548,13 @@
     </footer>
 
 
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/998d7906b0.js" crossorigin="anonymous "></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-    <script src="https://kit.fontawesome.com/998d7906b0.js " crossorigin="anonymous "></script>
+
 
     <script>
         function addbutton() {
