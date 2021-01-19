@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="background:#162036">
+    <div class="container-fluid p-0 m-0">
+
+        <nav class="p-2 navbar navbar-expand-sm navbar-dark control-panel " style="box-shadow: 0ch 0cm 4cm #1E1E1E">
+
+            <div class="container-fluid row">
+
+                <div class="branding col-xl-6 col-md-6 col-sm-6 col-lg-6 col-12 ml-5">
+                    <i class="fas fa-school fa-2x fa-inverse"></i>
+                    <a class="navbar-brand  p-2" href="#">SchoolName</a>
+                </div>
+                <button class="mx-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse col-xl-6 col-md-6 col-sm-6 col-lg-6 col-12 " id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-5 ml-lg-auto ml-xl-auto ml-md-auto ml-sm-auto" style="margin-left:100px">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link postion-relative">
+                                <p class=" font-weight-bold position-absolute text-white rounded-circle  text-center" style="margin: -9px 0px 0px 7px;;"><strong class="text-warning" style="font-size: 50px;line-height: 2px;">.</strong></p><i class="far fa-envelope-open fa-1x fa-inverse"></i></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-user-circle fa-1x fa-inverse"></i></a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="userProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                            <div class="dropdown-menu p-2 bb-dark" aria-labelledby="userProfile" style="margin-left: -80px;">
+                                <a href="#" class="d-block pb-1 pt-1 text-white "><i class="far fa-user mr-3 ml-2"></i>Xmass Duo</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-fingerprint ml-2 mr-3"></i> AB0956</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-cog ml-2 mr-3"></i>Setting</a>
+                                <a href="#" class="d-block pb-1 pt-1 text-white"><i class="fas fa-sign-out-alt ml-2 mr-3"></i>Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div style="width:25%; " class=" row float-left mb-4">
+        <div class=" control-panel col-xl-12 col-lg-12 p-0 m-0">
+            <div class=" pt-5">
+                <h5 class="text-white text-center pb-2 d-none d-sm-none  d-md-block d-lg-block d-xl-block" style="border-bottom:2px solid #162036;">Dashboard</h5>
+                <h5 class="text-white text-center ml-2 d-block d-sm-block d-md-none d-lg-none d-xl-none">DB</h5>
+            </div>
+
+            <div class="user d-block w-100 mt-4">
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none"> <i class="far fa-user-circle fa-1x fa-inverse d-flex justify-content-center "></i>
+                </div>
+                <div class="d-sm-none d-none d-md-block d-lg-block d-xl-block">
+                    <i class="far fa-user-circle fa-3x fa-inverse d-flex justify-content-center "></i>
+                </div>
+                <div class="userName d-block">
+                    <p class="text-white text-center mt-2 d-block d-sm-block d-md-none d-lg-none d-xl-none">UN</p>
+                    <p class="text-white text-center mt-2 d-sm-none d-none d-md-block d-lg-block d-xl-block">UserName</p>
+                </div>
+            </div>
+            <div class="control-menu mt-2 ml-1 mr-1" style="padding-bottom:0px; border-bottom: 2px solid #1E1E1E;">
+                <h5 class="title pb-1 text-white text-center ml-1 mr-1 pl-3 pr-2 d-sm-none d-none d-md-block d-lg-block d-xl-block" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">Control Widget</h5>
+                <p class="title pb-1 text-white ml-1 text-center d-block d-sm-block d-md-none d-lg-none d-xl-none" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">CW</p>
+            </div>
+
+            <ul class="nav-pills nav flex-column" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="admin.html"><i class="far fa-user p-1 mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Creation   </span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="account-management.html"><i class="fas fa-diagnoses mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Management</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="#"><i class="far fa-id-card mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Admit card Issue</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center active" href="class-schedule-making.html"><i class="fas fa-book mr-2 fa-inverse"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Class & Subject Creation</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="class-routine-creation.html"><i class="far fa-calendar-alt mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Create class Routine</span></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <!--Registration part-->
+    <div class="control-panel-content part-2 clearfix float-right" style="width:74%">
+
+        <!--Sub and Class Creation here-->
+
+        <div class=" control-panel mr-3 mt-4 mb-3 p-4 ml-0 row clearfix ">
+            <div class="form-group w-100 ">
+                <h5 class="text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-0 ">Write the Class Name You want to create</h5>
+                <input type="text " name=" " id=" " class="form-control col-xl-11 ml-xl-4 mt-4 col-lg-11 ml-lg-3 col-md-10 ml-md-5 col-sm-11 ml-sm-2 col-11 ml-1 " placeholder="Write the class Name ,eg: Class 1(M/D) ">
+            </div>
+            <div class="w-100 clearfix row ">
+                <div class="float-left col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3 ">
+                    <h5 class="text-white ml-xl-1 ml-lg-2 ">Please Enter The subject Name</h5>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3 ">
+                    <button class="btn btn-primary float-right btn-sm mb-2 " onclick="removebutton() ">   <span class="mr-1 ">&times;</span>Remove last field </button>
+                    <button class="btn btn-primary float-right btn-sm mr-lg-2 mr-xl-2 mb-xl-0 mb-lg-0 mr-sm-2 mb-sm-0 mb-3 " onclick="addbutton() ">  <span>&#43;</span> Add  more fields </button>
+                </div>
+            </div>
+            <div id="subject-parent" class="w-100 ml-2 row form-group ">
+                <input type="text " class="form-control col-xl-3 col-lg-3 m-md-3 m-sm-1 m-1 col-md-3 col-sm-5 col-10 " placeholder="insert subjcet name ">
+            </div>
+
+
+            <div class="w-100 clearfix row ">
+                <div class="float-left col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3 ">
+                    <h5 class="text-white ml-xl-1 ml-lg-2 ">Create Time frame</h5>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3 ">
+                    <button class="btn btn-primary float-right btn-sm mb-2 " onclick="removebutton2() ">   <span class="mr-1 ">&times;</span>Remove last field </button>
+                    <button class="btn btn-primary float-right btn-sm mr-lg-2 mr-xl-2 mb-xl-0 mb-lg-0 mr-sm-2 mb-sm-0 mb-3 " onclick="addbutton2() ">  <span>&#43;</span> Add  more fields </button>
+                </div>
+            </div>
+            <div id="subject-parent2" class="w-100 ml-2 row form-group ">
+                <input type="text " class="form-control col-xl-3 col-lg-3 m-md-3 m-sm-1 m-1 col-md-3 col-sm-5 col-10 " placeholder="9:10-10:10 ">
+            </div>
+            <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-3 ">
+                <button class="btn btn-success float-right ">Create</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Subject and Class Creation Ends here-->
+    <footer class=" container-fluid control-panel mt-4 p-3 " style="overflow: hidden; ">
+        <h5 class="text-center text-white ">Copyright &copy Reserved Rsoftbd</h5>
+    </footer>
+
+
+    <script src="../js/jquery-3.2.1.slim.min.js "></script>
+    <script src="../js/popper.min.js "></script>
+    <script src="../js/bootstrap.min.js "></script>
+    <script src="../js/bootstrap.bundle.min.js "></script>
+    <script src="../js/jquery.min.js "></script>
+    <script src="../js/998d7906b0.js "></script>
+
+
+    <script>
+        function addbutton() {
+            a = document.getElementById('subject-parent');
+            b = document.createElement('input');
+            b.setAttribute('type', 'text');
+            b.setAttribute('id', 'subject-id');
+            b.setAttribute('class', 'form-control sub-con col-xl-3 m-md-3 m-sm-1 m-1 col-lg-3 col-md-3 col-sm-5 col-10');
+            b.setAttribute('placeholder', 'insert subjcet name')
+            a.appendChild(b);
+        }
+
+        function addbutton2() {
+            a = document.getElementById('subject-parent2');
+            b = document.createElement('input');
+            b.setAttribute('type', 'text');
+            b.setAttribute('id', 'subject-id2');
+            b.setAttribute('class', 'form-control sub-con col-xl-3 m-md-3 m-sm-1 m-1 col-lg-3 col-md-3 col-sm-5 col-10');
+            b.setAttribute('placeholder', '9:10-10:10')
+            a.appendChild(b);
+        }
+
+        function removebutton() {
+            a = document.getElementById('subject-parent');
+            b = document.getElementById('subject-id');
+            console.log(b);
+            a.removeChild(b);
+        }
+
+        function removebutton2() {
+            a = document.getElementById('subject-parent2');
+            b = document.getElementById('subject-id2');
+            console.log(b);
+            a.removeChild(b);
+        }
+    </script>
+</body>
+
+</html>

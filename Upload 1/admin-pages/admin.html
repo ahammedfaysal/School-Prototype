@@ -68,26 +68,21 @@
                 <p class="title pb-1 text-white ml-1 text-center d-block d-sm-block d-md-none d-lg-none d-xl-none" style="border-bottom:2px solid #1E1E1E;margin-bottom:1px">CW</p>
             </div>
 
-            <ul class="nav-pills nav flex-column" id="pills-tab" role="tablist">
+            <ul class="nav-pills nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="account-creation" data-toggle="pill" href="#account"
-                        role="tab" aria-controls="account" aria-selected="true"><i class="far fa-user p-1 mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Creation   </span></a>
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center active" href="admin.html"><i class="far fa-user p-1 mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Creation   </span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="account-manage" data-toggle="pill" href="#account-management"
-                        role="tab" aria-controls="account-management" aria-selected="true"><i class="fas fa-diagnoses mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Management</span></a>
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="account-management.html"><i class="fas fa-diagnoses mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Account Management</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="admit-card-issue" data-toggle="pill" href="#admit"
-                        role="tab" aria-controls="admit" aria-selected="false"><i class="far fa-id-card mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Admit card Issue</span></a>
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="#admit"><i class="far fa-id-card mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Admit card Issue</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="class-subject-creation" data-toggle="pill" href="#class_subject"
-                        role="tab" aria-controls="class_subject" aria-selected="false"><i class="fas fa-book mr-2 fa-inverse"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Class & Subject Creation</span></a>
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="class-schedule-making.html"><i class="fas fa-book mr-2 fa-inverse"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Class & Subject Creation</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" id="class-routine" data-toggle="pill" href="#routine"
-                        role="tab" aria-controls="routine" aria-selected="false"><i class="far fa-calendar-alt mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Create class Routine</span></a>
+                    <a class="nav-link text-white ml-xl-3 ml-lg-3 ml-md-0 ml-sm-0 ml-0 d-flex justify-content-sm-center justify-content-lg-start justify-content-xl-start justify-content-md-center justify-content-center" href="class-routine-creation.html"><i class="far fa-calendar-alt mr-2"></i><span class="d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block">Create class Routine</span></a>
                 </li>
             </ul>
 
@@ -96,453 +91,200 @@
     </div>
     <!--Registration part-->
     <div class="control-panel-content part-2 clearfix float-right" style="width:74%">
-        <div class="tab-content" id="pills-tabContent">
-            <div class=" mr-3 mt-4 p-0 p-sm-4 tab-pane" aria-labelledby="account-creation" role="tabpanel" id="account">
-                <div class="control-panel mr-3 mt-4 p-4 ml-0">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Teacher Registration</a>
-                        </li>
-                        <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Student Registration</a>
-                        </li>
-                        <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Accountant Registration</a>
-                        </li>
-                    </ul>
+        <div class="control-panel mr-3 my-4 p-4 ml-0">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Teacher Registration</a>
+                </li>
+                <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Student Registration</a>
+                </li>
+                <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Accountant Registration</a>
+                </li>
+            </ul>
 
-                    <div class="tab-content">
-                        <div class="tab-pane active clearfix" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <!-- Teacher Registration Form starts Here-->
-                            <div class="text-white">
-                                <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">Teachers's Registration Form</h5>
-                                <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
-                                    <label for="Name">Name</label>
-                                    <div class="form-row mb-2 ">
-                                        <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
-                                            <input type="text" class="form-control " placeholder="First name">
-                                        </div>
-                                        <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
-                                            <input type="text" class="form-control" placeholder="Last name">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="staticEmail">Email</label>
-
-                                        <input type="email" class="form-control" id="staticEmail" value="email@example.com">
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="designaiton">Designation</label>
-
-                                        <input type="email" class="form-control" id="designaiton" value="Lecturer">
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="department">Department</label>
-
-                                        <input type="email" class="form-control" id="department" value="Science">
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="inputAddress">Address</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputAppointmentLatterNo">Appointment Letter ID</label>
-                                        <input type="text" class="form-control" id="inputAppointmentLatterNo" placeholder="2021-XmDLtX">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword4">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                                    </div>
-                                    <p class="text-white">Upload Your Image</p>
-                                    <div class="custom-file mt-0 text-white">
-                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                                        <label class="custom-file-label " for="validatedCustomFile">Choose file</label>
-                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                    </div>
-                                    <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
-                                </form>
-
-                                <!-- Teacher Registration Form Ends here-->
+            <div class="tab-content">
+                <div class="tab-pane active clearfix" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!-- Teacher Registration Form starts Here-->
+                    <div class="text-white">
+                        <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">Teachers's Registration Form</h5>
+                        <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
+                            <label for="Name">Name</label>
+                            <div class="form-row mb-2 ">
+                                <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
+                                    <input type="text" class="form-control " placeholder="First name">
+                                </div>
+                                <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="tab-pane clearfix text-white" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
+                            <div class="form-group">
+                                <label for="staticEmail">Email</label>
 
-                            <!-- Student Registration Form Starts here-->
+                                <input type="email" class="form-control" id="staticEmail" value="email@example.com">
 
-
-                            <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Students' Registration Form</h5>
-                            <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
-                                <label for="Name">Name</label>
-                                <div class="form-row mb-2 ">
-                                    <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
-                                        <input type="text" class="form-control " placeholder="First name">
-                                    </div>
-                                    <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
-                                        <input type="text" class="form-control" placeholder="Last name">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="staticEmail2">Email</label>
-
-                                    <input type="email" class="form-control" id="staticEmail2" value="email@example.com">
-
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="inputAddress2">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputAppointmentLatterNo2">Roll Number</label>
-                                    <input type="text" class="form-control" id="inputAppointmentLatterNo2" placeholder="2021-XmDLtX">
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword42">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword42" placeholder="Password">
-                                </div>
-                                <p class="text-white">Upload Your Image</p>
-                                <div class="custom-file mt-0">
-                                    <input type="file" class="custom-file-input" id="validatedCustomFile2" required>
-                                    <label class="custom-file-label" for="validatedCustomFile2">Choose file...</label>
-                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                </div>
-                                <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
-                            </form>
-
-
-                            <!-- Student Registration Form Ends here-->
-
-
-
-
-
-                        </div>
-                        <div class="tab-pane clearfix text-white" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-
-
-
-                            <!-- Management form Starts here-->
-                            <div class=" text-white" id="item5">
-                                <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 text-center">Accounts Registration Form</h5>
-                                <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
-                                    <label for="Name">Name</label>
-                                    <div class="form-row mb-2 ">
-                                        <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
-                                            <input type="text" class="form-control " placeholder="First name">
-                                        </div>
-                                        <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
-                                            <input type="text" class="form-control" placeholder="Last name">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="staticEmail3">Email</label>
-
-                                        <input type="email" readonly class="form-control" id="staticEmail3" value="email@example.com">
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="designaiton-acc">Designation</label>
-
-                                        <input type="email" class="form-control" id="designaiton-acc" value="Junior Accountant">
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="department-acc">Department</label>
-
-                                        <input type="email" class="form-control" id="department-acc" value="Accounts">
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="inputAddress3">Address</label>
-                                        <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputAppointmentLatterNo3">Appointment Latter ID</label>
-                                        <input type="text" class="form-control" id="inputAppointmentLatterNo3" placeholder="2021-XmDLtX">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword43">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword43" placeholder="Password">
-                                    </div>
-                                    <p class="text-white">Upload Your Image</p>
-                                    <div class="custom-file mt-0">
-                                        <input type="file" class="custom-file-input" id="validatedCustomFile3" required>
-                                        <label class="custom-file-label" for="validatedCustomFile3">Choose file...</label>
-                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                    </div>
-                                    <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
-                                </form>
                             </div>
-                            <!--Management form ends here-->
-                        </div>
+
+                            <div class="form-group">
+                                <label for="designaiton">Designation</label>
+
+                                <input type="email" class="form-control" id="designaiton" value="Lecturer">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="department">Department</label>
+
+                                <input type="email" class="form-control" id="department" value="Science">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAppointmentLatterNo">Appointment Letter ID</label>
+                                <input type="text" class="form-control" id="inputAppointmentLatterNo" placeholder="2021-XmDLtX">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                            <p class="text-white">Upload Your Image</p>
+                            <div class="custom-file mt-0 text-white">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                <label class="custom-file-label " for="validatedCustomFile">Choose file</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
+                            <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+                        </form>
+
+                        <!-- Teacher Registration Form Ends here-->
                     </div>
                 </div>
-            </div>
-            <!--registration section ends here-->
-            <!-- Account Management starts here-->
-            <div class=" mr-3 mt-4 p-4 tab-pane control-panel mb-4" aria-labelledby="account-manage" role="tabpanel" id="account-management">
-                <ul class="nav nav-tabs" id="myTab2" role="tablist">
-                    <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <a class="nav-link active" id="teacher-tab" data-toggle="tab" href="#Teacher-profile" role="tab" aria-controls="Teacher-profile" aria-selected="true">Teacher Profile</a>
-                    </li>
-                    <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <a class="nav-link" id="student-tab" data-toggle="tab" href="#student-profile" role="tab" aria-controls="student-profile" aria-selected="false">Student Profile</a>
-                    </li>
-                    <li class="nav-item col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <a class="nav-link" id="account-tab" data-toggle="tab" href="#accounts-profile" role="tab" aria-controls="accounts-profile" aria-selected="false">Accountants Profile</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="Teacher-profile" aria-labelledby="teacher-tab" role="tabpanel">
-                        <h5 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 my-3 text-white">Teachers Profile</h5>
-                        <div class="row d-flex justify-content-center">
+                <div class="tab-pane clearfix text-white" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id1" onclick="edit_user('id1')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id1_2" onclick="deactivate_account('id1_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
+
+                    <!-- Student Registration Form Starts here-->
+
+
+                    <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Students' Registration Form</h5>
+                    <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
+                        <label for="Name">Name</label>
+                        <div class="form-row mb-2 ">
+                            <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
+                                <input type="text" class="form-control " placeholder="First name">
                             </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id2" onclick="edit_user('id2')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id2_2" onclick="deactivate_account('id2_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top d-flex mt-3 justify-content-center"><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id3" onclick="edit_user('id3')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id3_2" onclick="deactivate_account('id3_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id4" onclick="edit_user('id4')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id4_2" onclick="deactivate_account('id4_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id5" onclick="edit_user('id5')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id5_2" onclick="deactivate_account('id5_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
+                            <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
+                                <input type="text" class="form-control" placeholder="Last name">
                             </div>
                         </div>
-                    </div>
-                    <div id="student-profile" class="tab-pane fade" role="tabpanel" aria-labelledby="student-tab">
-                        <div class="d-flex justify-content-center form-row">
-                            <!--Student account control section-->
-                            <h5 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white my-3">Please choose you class</h5>
 
-                            <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0 ">
-                                <button class="btn btn-secondary dropdown-toggle control-panel mt-3 text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     Select Class
-                              </button>
-                                <div class="dropdown-menu control-panel" aria-labelledby="dropdownMenuButton">
-                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 1</a>
-                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 2</a>
-                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 3</a>
-                                    <a target="_blank " href="student-profile.html" class="text-white d-block p-2 ml-4">Class 4</a>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="staticEmail2">Email</label>
+
+                            <input type="email" class="form-control" id="staticEmail2" value="email@example.com">
+
                         </div>
-                    </div>
 
-
-                    <div class="tab-pane fade" id="accounts-profile" aria-labelledby="account-tab">
-
-                        <div class="row d-flex justify-content-center">
-                            <h5 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  my-3 text-white">Accounts Profile</h5>
-
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id10" onclick="edit_user('id10')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id10_2" onclick="deactivate_account('id10_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id6" onclick="edit_user('id6')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id6_2" onclick="deactivate_account('id6_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top d-flex mt-3 justify-content-center"><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id7" onclick="edit_user('id7')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id7_2" onclick="deactivate_account('id7_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id8" onclick="edit_user('id8')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id8_2" onclick="deactivate_account('id8_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
-                            <div class="card p-0 p-sm-3 col-xl-3 col-lg-5 m-lg-3 col-md-5 m-md-3 col-sm-10 col-11 m-3 m-sm-3 m-xl-3">
-                                <div class="card-img-top justify-content-center d-flex mt-3 "><i class="fa fa-user "></i></div>
-                                <div class="card-body p-2">
-                                    <p class="card-text editable  ">User Name</p>
-                                    <p class="card-text">User ID</p>
-                                    <p class="card-text editable ">Designation</p>
-                                    <p class="card-text editable ">Password</p>
-                                    <!--Rifat You have to allot dynamic id in case of Edit info and Deactive Account buttons below and also have to give the same id during onclick event function. the two buttons are below-->
-                                    <a href="# " class="btn btn-primary m-2 ml-0 " id="id9" onclick="edit_user('id9')">Edit Info</a>
-                                    <a href="# " class="btn btn-info m-2 ml-0 " id="id9_2" onclick="deactivate_account('id9_2')">Deactive Account</a>
-                                    <a href="# " class="btn btn-danger m-2 ml-0 ">Remove Account</a>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Account Management ends here-->
-
-            <!--Sub and Class Creation here-->
-            <div class="tab-pane show fade" aria-labelledby="class-subject-creation" role="tabpanel" id="class_subject">
-                <div class=" control-panel mr-3 mt-4 mb-3 p-4 ml-0 row clearfix">
-                    <div class="form-group w-100">
-                        <h5 class="text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-0">Write the Class Name You want to create</h5>
-                        <input type="text" name="" id="" class="form-control col-xl-11 ml-xl-4 mt-4 col-lg-11 ml-lg-3 col-md-10 ml-md-5 col-sm-11 ml-sm-2 col-11 ml-1" placeholder="Write the class Name ,eg: Class 1(M/D)">
-                    </div>
-                    <div class="w-100 clearfix row">
-                        <div class="float-left col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
-                            <h5 class="text-white ml-xl-1 ml-lg-2  ">Please Enter The subject Name</h5>
+                        <div class="form-group">
+                            <label for="inputAppointmentLatterNo2">Roll Number</label>
+                            <input type="text" class="form-control" id="inputAppointmentLatterNo2" placeholder="2021-XmDLtX">
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
-                            <button class="btn btn-primary  float-right btn-sm mb-2" onclick="removebutton()">   <span class="mr-1">&times;</span>Remove last field </button>
-                            <button class="btn btn-primary float-right btn-sm mr-lg-2 mr-xl-2 mb-xl-0 mb-lg-0 mr-sm-2 mb-sm-0 mb-3" onclick="addbutton()">  <span>&#43;</span> Add  more fields </button>
+                        <div class="form-group">
+                            <label for="inputPassword42">Password</label>
+                            <input type="password" class="form-control" id="inputPassword42" placeholder="Password">
                         </div>
-                    </div>
-                    <div id="subject-parent" class="w-100 ml-2 row form-group">
-                        <input type="text" id="" class="form-control col-xl-3 col-lg-3 m-md-3 m-sm-1 m-1 col-md-3 col-sm-5 col-10" placeholder="insert subjcet name">
-                    </div>
+                        <p class="text-white">Upload Your Image</p>
+                        <div class="custom-file mt-0">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile2" required>
+                            <label class="custom-file-label" for="validatedCustomFile2">Choose file...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+                        <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+                    </form>
 
 
-                    <div class="w-100 clearfix row">
-                        <div class="float-left col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
-                            <h5 class="text-white ml-xl-1 ml-lg-2  ">Create Time frame</h5>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
-                            <button class="btn btn-primary  float-right btn-sm mb-2" onclick="removebutton2()">   <span class="mr-1">&times;</span>Remove last field </button>
-                            <button class="btn btn-primary float-right btn-sm mr-lg-2 mr-xl-2 mb-xl-0 mb-lg-0 mr-sm-2 mb-sm-0 mb-3" onclick="addbutton2()">  <span>&#43;</span> Add  more fields </button>
-                        </div>
-                    </div>
+                    <!-- Student Registration Form Ends here-->
 
-                    <div id="subject-parent2" class="w-100 ml-2 row form-group">
-                        <input type="text" id="" class="form-control col-xl-3 col-lg-3 m-md-3 m-sm-1 m-1 col-md-3 col-sm-5 col-10" placeholder="9:10-10:10">
-                    </div>
-                    <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-3 ">
-                        <button class="btn btn-success float-right ">Create</button>
-                    </div>
+
+
+
 
                 </div>
-            </div>
-            <!-- Subject and Class Creation Ends here-->
+                <div class="tab-pane clearfix text-white" id="messages" role="tabpanel" aria-labelledby="messages-tab">
 
 
-            <!--Your Routine make here-->
-            <div class="tab-pane fade mr-3 mt-3 " aria-labelledby="class-routine " id="routine">
-                <div class="control-panel p-lg-5 p-md-5 p-lg-5 p-sm-5 p-2 mb-3 ">
-                    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                        <h5 class="text-white ">Please Choose class to set the class routine</h5>
+
+                    <!-- Management form Starts here-->
+                    <div class=" text-white" id="item5">
+                        <h5 class="p-0 p-sm-3 p-md-3 p-lg-3 p-xl-3 text-center">Accounts Registration Form</h5>
+                        <form class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 p-sm-2">
+                            <label for="Name">Name</label>
+                            <div class="form-row mb-2 ">
+                                <div class="d-block d-inline-sm-block mb-2 ml-1 mb-sm-0 mb-2 mr-sm-4 mr-0">
+                                    <input type="text" class="form-control " placeholder="First name">
+                                </div>
+                                <div class="d-block d-inline-sm-block ml-sm-1 ml-1 mt-3 mt-md-0 bt-sm-0">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="staticEmail3">Email</label>
+
+                                <input type="email" readonly class="form-control" id="staticEmail3" value="email@example.com">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="designaiton-acc">Designation</label>
+
+                                <input type="email" class="form-control" id="designaiton-acc" value="Junior Accountant">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="department-acc">Department</label>
+
+                                <input type="email" class="form-control" id="department-acc" value="Accounts">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputAddress3">Address</label>
+                                <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAppointmentLatterNo3">Appointment Latter ID</label>
+                                <input type="text" class="form-control" id="inputAppointmentLatterNo3" placeholder="2021-XmDLtX">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword43">Password</label>
+                                <input type="password" class="form-control" id="inputPassword43" placeholder="Password">
+                            </div>
+                            <p class="text-white">Upload Your Image</p>
+                            <div class="custom-file mt-0">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile3" required>
+                                <label class="custom-file-label" for="validatedCustomFile3">Choose file...</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
+                            <button class="btn btn-primary mt-4 float-right" type="submit">Submit form</button>
+                        </form>
                     </div>
-
-                    <div class="dropdown py-2 justify-content-md-center justify-content-center justify-content-sm-center d-flex justify-content-lg-start ml-lg-4 ml-md-0 ">
-                        <button class="btn btn-secondary dropdown-toggle control-panel mt-3 text-white" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     Select Class
-                              </button>
-                        <div class="dropdown-menu control-panel" aria-labelledby="dropdownMenuButton">
-                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 1</a>
-                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 2</a>
-                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 3</a>
-                            <a target="_blank " href="class-routine.html " class="text-white d-block p-2 ml-4">Class 4</a>
-                        </div>
-                    </div>
-
-
-
-
+                    <!--Management form ends here-->
                 </div>
             </div>
         </div>
     </div>
-
+    <!--registration section ends here-->
     <footer class=" container-fluid control-panel mt-4 p-3 " style="overflow: hidden; ">
         <h5 class="text-center text-white ">Copyright &copy Reserved Rsoftbd</h5>
     </footer>
@@ -589,63 +331,6 @@
             b = document.getElementById('subject-id2');
             console.log(b);
             a.removeChild(b);
-        }
-
-        let user_id;
-
-        function deactivate_account(user_id) {
-            let deac_acc = document.getElementById(user_id);
-            deac_acc.textContent = 'activate account';
-        }
-
-        function edit_user(user_id) {
-            let user_button = document.getElementById(user_id);
-            let table = user_button.parentNode;
-            user_button.textContent = 'submit';
-            let cells = table.getElementsByClassName('editable');
-            for (var i = 0; i < cells.length; i++) {
-                cells[i].onclick = function() {
-                    if (this.hasAttribute('data-clicked')) {
-                        return;
-                    }
-                    this.setAttribute('data-clicked', 'yes');
-                    this.setAttribute('data-text', this.innerHTML);
-                    var input = document.createElement('input');
-                    input.setAttribute('type', 'text');
-                    input.value = this.innerHTML;
-                    input.style.widht = this.offsetWidth - (this.clientLeft * 2) + 'px';
-                    input.style.height = this.offsetHeight - (this.cleintTop * 2) + 'px';
-                    input.style.border = "0px "
-                    input.style.fontFamily = "inherit ";
-                    input.style.fontSize = "inherit ";
-                    input.style.textAlign = "inherit ";
-                    input.style.backgroundColor = "LightGoldRodYellow ";
-                    input.onblur = function() {
-
-                        var sub = input.parentElement;
-                        var original_text = input.parentElement.getAttribute('data-text');
-                        var current_text = this.value;
-                        if (original_text != current_text) {
-                            sub.removeAttribute('data-clicked');
-                            sub.removeAttribute('data-text');
-                            sub.innerHTML = current_text;
-                            sub.style.cssText = "padding:5px ";
-                            console.log('your data has been changed');
-                        } else {
-                            sub.removeAttribute('data-clicked');
-                            sub.removeAttribute('data-text');
-                            sub.innerHTML = original_text;
-                            sub.style.cssText = "padding:5px ";
-                            console.log('no change has made');
-                        }
-                    }
-                    this.innerHTML = " ";
-                    this.style.cssText = "padding:0px 0px ";
-                    this.append(input);
-                    this.firstElementChild.select();
-                }
-            }
-
         }
     </script>
 </body>
