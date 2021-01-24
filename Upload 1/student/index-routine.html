@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/google-font-Raleway.css">
+    <link rel="stylesheet" href="../css/google-fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Student Page</title>
+</head>
+
+<body style="font-family:raleway;">
+    <div class="student-main">
+        <div class="student-content">
+            <div class="suser-control">
+                <div class="suer-porfile d-flex justify-content-center row">
+                    <div class="image-pro col-12 justify-content-center d-flex">
+                        <img src="img/user.png" class="mx-auto"></div>
+                    <div class="dropdown mt-3 col-12 justify-content-center d-flex">
+                        <div class="dropdown show">
+                            <a class="btn btn-outline-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              UName
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Seting</a>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-sm mt-1 mt-sm-5 p-2">
+
+                    <button class="navbar-toggler bg-dark navbar-light mx-auto my-3" type="button" data-toggle="collapse" data-target="#student-menu" aria-controls="student-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                     <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="student-menu">
+                        <ul class="navbar-nav w-100 flex-column">
+                            <li class="nav-item">
+                                <a onclick="border_work(this.id)" id="item1" class="nav-link bb-men" href="#">Routine </a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="border_work(this.id)" id="item2" class="nav-link" href="#">Attendence</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="border_work(this.id)" id="item3" class="nav-link" href="#">Class Notes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="border_work(this.id)" id="item4" class="nav-link" href="#">Fees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="border_work(this.id)" id="item5" class="nav-link" href="#">Result</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="sClassRoutine mr-4 table-responsive-sm table-responsive-md  table-responsive-lg table-responsive-xl">
+                <h4 class="heading text-center my-4">Routine</h4>
+                <table class="table table-striped m-3 ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day/<br>Time</th>
+                            <th scope="col">9:10-10:00</th>
+                            <th scope="col">10:01-10:50</th>
+                            <th scope="col">10:51-11:40</th>
+                            <th scope="col">11:41-12:10</th>
+                            <th scope="col">12:11-12:50</th>
+                            <th scope="col">12:51-01:40</th>
+                            <th scope="col">01:41-02:20</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Sub-1</td>
+                            <td>Sub-2</td>
+                            <td>Sub-3</td>
+                            <td>Lunch</td>
+                            <td>Sub-4</td>
+                            <td>Sub-5</td>
+                            <td>Sub-6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Sub-1</td>
+                            <td>Sub-2</td>
+                            <td>Sub-3</td>
+                            <td>Lunch</td>
+                            <td>Sub-4</td>
+                            <td>Sub-5</td>
+                            <td>Sub-6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sub-1</td>
+                            <td>Sub-2</td>
+                            <td>Sub-3</td>
+                            <td>Lunch</td>
+                            <td>Sub-4</td>
+                            <td>Sub-5</td>
+                            <td>Sub-6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Sub-1</td>
+                            <td>Sub-2</td>
+                            <td>Sub-3</td>
+                            <td>Lunch</td>
+                            <td>Sub-4</td>
+                            <td>Sub-5</td>
+                            <td>Sub-6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Sub-1</td>
+                            <td>Sub-2</td>
+                            <td>Sub-3</td>
+                            <td>Lunch</td>
+                            <td>Sub-4</td>
+                            <td>Sub-5</td>
+                            <td>Sub-6</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+        <div class="squre1"></div>
+        <div class="squre2"></div>
+
+    </div>
+
+    <script src="../js/jquery-3.2.1.slim.min.js "></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/998d7906b0.js"></script>
+    <script>
+        let student_panel = document.getElementById('student-menu');
+
+        function border_work(id_no) {
+            let bb_men = document.querySelector('.bb-men');
+            bb_men.classList.remove('bb-men');
+            let id_no1 = document.getElementById(id_no);
+            id_no1.classList.add('bb-men');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'roboto',sans-serif;">
+    <div class="d-block">
+        <div class="container-fluid m-0 top-menu clearfix row p-2">
+            <div class="float-left ml-2">
+                <p class="my-3 text-white h4 m-0 p-0 font-weight-bold">College Name</p>
+            </div>
+
+            <div class="mx-auto">
+                <ul class="navbar-nav d-flex flex-row menu-page" id="student-panel">
+                    <li class="nav-item px-2 "><a href="#" class="bb-men nav-link text-white font-weight-bold" id="id1" onclick="border_work(this.id)">Class Routine</a></li>
+                    <li class="nav-item px-2"><a href="#" class="nav-link text-white font-weight-bold" id="id2" onclick="border_work(`id2`)">Show Attendence</a></li>
+                    <li class="nav-item px-2"><a href="#" class="nav-link text-white font-weight-bold" id="id3" onclick="border_work(`id3`)">Student Result</a></li>
+                    <li class="nav-item px-2"><a href="#" class="nav-link text-white font-weight-bold" id="id4" onclick="border_work(`id4`)">Class Notes</a></li>
+                    <li class="nav-item px-2"><a href="#" class="nav-link text-white font-weight-bold" id="id5" onclick="border_work(`id5`)">Fees</a></li>
+                </ul>
+            </div>
+            <div class="float-right mr- mt-2">
+                <div class="d-inline-block">
+                    <div class="logo-margin">
+                        <i class="far fa-2x fa-inverse fa-user-circle d-inline-block"></i></div>
+                </div>
+                <div class="dropdown d-inline-block mr-4">
+                    <button class="btn negative-margin bg-transparent btn-outline-light dropdown-toggle ml-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          user_name
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid m-0 p-0">
+
+
+
+    </div>
+
+    <script src="../js/jquery-3.2.1.slim.min.js "></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/998d7906b0.js"></script>
+    <script>
+        let student_panel = document.getElementById('student-panel');
+
+        function border_work(id_no) {
+            let bb_men = document.querySelector('.bb-men');
+            bb_men.classList.remove('bb-men');
+            let id_no1 = document.getElementById(id_no);
+            id_no1.classList.add('bb-men');
+        }
+    </script>
+
+</body>
+
+</html>
