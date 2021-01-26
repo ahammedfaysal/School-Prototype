@@ -423,6 +423,14 @@
             font-family: 'roboto-condensed' roboto;
         }
         
+        .profile-link {
+            border-radius: 7px;
+        }
+        
+        .profile-link i {
+            border-radius: 0px 5px 5px 0px;
+        }
+        
         .student-content {
             background: white;
             min-height: 80vh;
