@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesomme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="background:#162036">
+    <div class="container-fluid control-panel">
+        <div class="container">
+            <div class="p-3 m-0 row d-flex justify-content-between">
+                <div class="branding">
+                    <i class="fas fa-school fa-2x fa-inverse"></i>
+                    <a class="navbar-brand text-white p-2" href="#">SchoolName</a>
+                </div>
+                <div class="p-3">
+                    <a href="admin-pages/admin.html" class="text-white float-right mr-3"> Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" mt-4 control-panel p-4 mb-5 container br-2">
+        <form class="justify-content-center d-flex row text-white user-info">
+            <i class="far fa-user fa-4x p-2 fa-inverse br-white m-3"></i>
+            <div class="custom-file mx-4">
+                <input type="file" class="custom-file-input" id="validatedCustomFile3" required>
+                <label class="custom-file-label" for="validatedCustomFile3">Change Image..</label>
+                <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+
+            <p class="w-100 px-4 mt-3 name1 d-inline-block">First Name:<span class="admin">Yakub</span></p>
+            <p class="name2 d-inline-block w-100 px-4">Last Name:<span class="admin">Ali</span></p>
+
+            <p class="name2 w-100 px-4 d-inline-block">Email:<span class=" ml-1 admin">ali123@gmail.com</span></p>
+            <p class="post w-100 px-4">Account Type:<span class="admin ml-1">Teacher</span></p>
+            <p class="post w-100 px-4">Account Type:<span class="admin ml-1">Student</span></p>
+            <p class="post w-100 px-4">Address:<span class="employee student admin">xyz, 23432 road, Dhaka</span></p>
+            <p class="post w-100 px-4">Appoinment ID:<span class="employee admin ml-1">ABZ234</span></p>
+            <p class="post w-100 px-4">Student ID:<span class="student admin ml-1">AB7921</span></p>
+            <p class="post w-100 px-4">Password:<span class="admin student employee ml-1">123odohf@s</span></p>
+
+            <p class="btn btn-info">Update</p>
+
+        </form>
+    </div>
+    <footer class="container-fluid row control-panel pb-3 pt-3 m-0" style="overflow: hidden;">
+        <h5 class="text-center text-white col-12 col-md-12 col-lg-12 col-xl-12 col-md-12 col-sm-12">Copyright &copy Reserved by Rsoftbd</h5>
+    </footer>
+    <script src="js/jquery-3.2.1.slim.min.js "></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/998d7906b0.js"></script>
+    <script>
+        let editable = document.querySelector('.user-info');
+        let admin_edit = editable.getElementsByClassName('admin');
+        let student_edit = editable.getElementsByClassName('student');
+        let employee_edit = editable.getElementsByClassName('employee');
+        let user1 = 'admin';
+        let user2 = 'student';
+        let user3 = 'employee';
+
+        if (user1 == 'admin') {
+            Array.from(admin_edit).forEach(function(item) {
+                let item_content = item.innerText;
+                item.innerHTML = `<input type="text" class="form-control" value="${item_content}"></input>`
+            })
+        }
+    </script>
+</body>
+
+</html>

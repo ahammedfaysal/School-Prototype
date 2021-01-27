@@ -499,6 +499,18 @@
             display: block;
         }
         
+        .profile-link a i {
+            margin: 1px;
+        }
+        
+        .br-white {
+            border: 1px solid white
+        }
+        
+        .br-2 {
+            border-radius: 5px;
+        }
+        
         @media (max-width:576px) {
             .reg-men li a {
                 padding: 7px;
